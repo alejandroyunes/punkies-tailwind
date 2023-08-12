@@ -6,6 +6,18 @@ export const HamburgerMenu = styled.div`
   z-index: ${({ theme }) => theme.zIndices.dropdown};
 `;
 
+export const ThemeSwitch = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 25px 72px 0 0;
+  -webkit-tap-highlight-color: transparent;
+  svg {
+    height: 20px;
+    width: 20px;
+    color: white;
+  }
+`;
+
 export const Menu = styled.div`
   position: absolute;
   top: 23px;
@@ -64,7 +76,6 @@ export const Menu = styled.div`
 `;
 
 export const Links = styled.ul`
-  color: ${({ theme }) => theme.palette.common.white};
   width: 200px;
   padding: 30px;
   background: ${({ theme }) => theme.palette.common.black};
@@ -78,55 +89,15 @@ export const Links = styled.ul`
   transform: translate(0, -100%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   li {
+    color: ${({ theme }) => theme.palette.common.white};
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
   }
   li:hover {
     color: ${({ theme }) => theme.palette.common.white};
   }
-
-  .dropdown {
-    position: relative;
-
-    .media {
-      position: relative;
-      svg {
-        vertical-align: text-top;
-        fill: #fff;
-        margin-left: 8px;
-      }
-      /* svg:hover {
-      
-    } */
-    a + svg:hover {
-      color: ${({ theme }) => theme.colors?.tertiary};
-      fill: ${({ theme }) => theme.colors?.tertiary};
-    }
-    }
-    .media-links {
-      visibility: hidden;
-      position: absolute;
-      opacity: 0;
-      right: 138px;
-      width: 120px;
-      text-align: center;
-      background: ${({ theme }) => theme.colors?.dropdown};
-      transition: all 0.2s ease;
-      top: 0;
-      ul li {
-        color: ${({ theme }) => theme.colors?.secondary};
-      }
-      ul li:hover {
-        color: ${({ theme }) => theme.colors?.tertiary};
-      }
-    }
-    .media:hover + .media-links,
-    .media-links:hover {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-  .dropdpown:hover {
+  a {
+    text-decoration: none;
   }
 `;

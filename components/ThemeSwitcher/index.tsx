@@ -9,8 +9,8 @@ export const ThemeSwitcher = () => {
 
   return (
     theme.name === 'darkmode' ?
-      <span onClick={() => setTheme(lightTheme)}> <Moon /></span>
+      <span onClick={() => setTheme(lightTheme)}> <Sun /></span>
       :
-      <span onClick={() => setTheme(darkTheme)}> <Sun /></span>
+      <span onClick={() => setTheme(darkTheme)}> <Moon /></span>
   )
 }

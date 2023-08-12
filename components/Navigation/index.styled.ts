@@ -90,18 +90,6 @@ export const ImageMain = styled.div`
   }
 `;
 
-export const ImagePaddingMobile = styled.div`
-  padding-left: 24px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  h1 {
-    font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.textColor};
-    font-size: 26px;
-  }
-`;
-
 export const MobileNav = styled.div`
   display: none;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
@@ -109,7 +97,6 @@ export const MobileNav = styled.div`
     justify-content: space-between;
     width: 100%;
     background-color: ${({ theme }) => theme.palette.common.black};
-    z-index: ${({ theme }) => theme.zIndices.sticky};
   }
 `;
 
@@ -120,5 +107,19 @@ export const MobileLogo = styled.div`
     align-items: center;
     padding: 5px 0 0 4px;
     -webkit-tap-highlight-color: transparent;
+    a {
+    text-decoration: none;
+    }
+  }
+`;
+
+export const ImagePaddingMobile = styled.div`
+  padding-left: 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  h1 {
+    color: ${({ theme }) => theme.palette.common.white};
+    font-size: 26px;
   }
 `;

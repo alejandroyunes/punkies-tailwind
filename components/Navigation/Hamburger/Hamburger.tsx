@@ -1,23 +1,22 @@
-"use client"
-
 import { useState } from "react"
 import Link from "next/link"
 
-import { HamburgerMenu, Menu, Links } from "./index.styled"
+import { Menu, Links, HamburgerMenu, ThemeSwitch } from "./index.styled"
+import { ThemeSwitcher } from "../../ThemeSwitcher"
 
 const Hamburger = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <HamburgerMenu>
+      <ThemeSwitch>
+        <ThemeSwitcher />
+      </ThemeSwitch>
       <Menu onMouseLeave={() => setMenuOpen(false)}>
         <input
           type="checkbox"
-          // defaultChecked={menuOpen}
           checked={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
-          //The onChange deletes the error message about the checked prop
-          onChange={(e) => { }}
         />
         <span></span>
         <span></span>
@@ -58,34 +57,11 @@ const Hamburger = () => {
               Tienda
             </li>
           </Link>
-          {/* <Link href="/">
-            <li className="dropdown" onClick={() => setMenuOpen(false)}>
-              <div className="media">
-                <a>Media</a>
-                <PlusOutlineSvg />
-              </div>
-              <div className="media-links">
-                <ul>
-                  <Link href="/podcast">
-                    <li onClick={() => setMenuOpen(false)}>
-                      <a>PodCast</a>
-                    </li>
-                  </Link>
-                  <Link href="/rnql">
-                    <li onClick={() => setMenuOpen(false)}>
-                      <a>RNQL</a>
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            </li>
-          </Link> */}
           <Link href="/rnql">
             <li onClick={() => setMenuOpen(false)}>
               RNQL
             </li>
           </Link>
-
           <Link href="/contacto">
             <li onClick={() => setMenuOpen(false)}>
               Contacto

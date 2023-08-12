@@ -14,8 +14,6 @@ import {
   MobileNav,
   MobileLogo,
 } from "./index.styled"
-import { ThemeSwitcher } from "../ThemeSwitcher"
-
 
 const Navigation: FC = () => {
   const pathname = usePathname()
@@ -81,10 +79,6 @@ const Navigation: FC = () => {
                   Contacto
                 </li>
               </Link>
-
-              <ThemeSwitcher />
-
-              {/* <LoginButton /> */}
             </ul>
           </Menu>
         </LinksContainer>
