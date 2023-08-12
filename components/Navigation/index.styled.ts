@@ -1,52 +1,55 @@
 import styled from "styled-components";
 
-interface NavProps {
-  highlighted: boolean;
-}
+export const LinksWrapper = styled.nav`
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 0 auto;
+  background: ${({ theme }) => theme.palette.common.black};
+  width: 100%;
+`;
 
 export const LinksContainer = styled.div`
-  width: 100%;
   position: relative;
   display: flex;
   justify-content: space-around;
-  height: 130px;
-  width: ${({ theme }) => theme.breakpoint.md};
+  height: 100px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
   }
-`;
-export const LinksWrapper = styled.div`
-  width: ${({ theme }) => theme.breakpoint.md};
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 0 auto;
 `;
 
 export const Menu = styled.div`
   z-index: ${({ theme }) => theme.zIndices.docked};
   display: flex;
   align-items: center;
-  z-index: 3000;
   ul {
     display: flex;
     align-items: center;
     height: 48px;
+    padding: 0;
+    span {
+      cursor: pointer;
+    }
+    svg {
+      height: 20px;
+      width: 20px;
+      color: white;
+    }
   }
   li {
     display: inline-flex;
     padding: 0 12px;
-    font-family: ${({ theme }) => theme.fonts.primary};
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     cursor: pointer;
     span {
       display: flex;
       padding: 0 4px;
     }
-    a:hover {
-      color: ${({ theme }) => theme.colors.lighterRed};
+    li:hover {
+      color: #8D203D;
     }
     .active {
-      color: ${({ theme }) => theme.colors.lighterRed};
+      color: #8D203D;
     }
   }
   .dropdown {
@@ -54,7 +57,7 @@ export const Menu = styled.div`
   }
   ul li ul {
     visibility: hidden;
-    background: ${({ theme }) => theme.colors.dropdown};
+    background: #161616;
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease;
@@ -107,7 +110,7 @@ export const ImagePaddingMobile = styled.div`
   align-items: center;
   h1 {
     font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.textColor};
     font-size: 26px;
   }
 `;
@@ -121,7 +124,7 @@ export const MobileNav = styled.div`
     justify-content: space-between;
     width: 100%;
     /* position: fixed; */
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.bodyColor};
     z-index: ${({ theme }) => theme.zIndices.sticky};
   }
 `;

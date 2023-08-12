@@ -2,11 +2,12 @@
 import type { AppProps } from "next/app"
 import { ThemeProvider } from "styled-components"
 import { useLocalStorage } from "usehooks-ts"
-import { defaultTheme } from "../styles/themes/defaultTheme"
+import { lightTheme } from "../styles/themes/lightTheme"
 import { GlobalStyle } from "../styles/themes/GlobalStyle"
+import { darkTheme } from "../styles/themes/darkTheme"
 
 function PunkiesApp({ Component, pageProps }: AppProps) {
-  const [theme] = useLocalStorage("theme", defaultTheme)
+  const [theme] = useLocalStorage("theme", darkTheme)
   
   return (
     <ThemeProvider theme={theme}>

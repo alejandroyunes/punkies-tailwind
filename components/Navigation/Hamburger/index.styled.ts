@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const HamburgerMenu = styled.div`
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  z-index: ${({ theme }) => theme.zIndices.dropdown};
+  z-index: ${({ theme }) => theme.zIndices?.dropdown};
 `;
 
 export const Menu = styled.div`
   position: absolute;
   top: 23px;
   right: 0px;
-  z-index: ${({ theme }) => theme.zIndices.dropdown};
+  z-index: ${({ theme }) => theme.zIndices?.dropdown};
   -webkit-user-select: none;
   user-select: none;
   input {
@@ -32,7 +32,7 @@ export const Menu = styled.div`
     right: 20px;
     margin-bottom: 5px;
     position: relative;
-    background: ${({ theme }) => theme.colors.secondary};
+    background: ${({ theme }) => theme.colors?.secondary};
     border-radius: 2px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -49,7 +49,7 @@ export const Menu = styled.div`
   input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(4px, -6px);
-    background: ${({ theme }) => theme.colors.secondary};
+    background: ${({ theme }) => theme.colors?.secondary};
   }
   input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -64,10 +64,10 @@ export const Menu = styled.div`
 `;
 
 export const Links = styled.ul`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors?.secondary};
   width: 200px;
   padding: 30px;
-  background: ${({ theme }) => theme.colors.dropdown};
+  background: ${({ theme }) => theme.colors?.dropdown};
   position: absolute;
   right: 0;
   top: -40px;
@@ -80,11 +80,11 @@ export const Links = styled.ul`
   li {
     padding: 10px 0;
     font-size: 22px;
-    font-family: ${({ theme }) => theme.fonts.primary};
+    font-family: ${({ theme }) => theme.fonts?.primary};
     cursor: pointer;
   }
   li:hover {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors?.tertiary};
   }
 
   .dropdown {
@@ -101,8 +101,8 @@ export const Links = styled.ul`
       
     } */
     a + svg:hover {
-      color: ${({ theme }) => theme.colors.tertiary};
-      fill: ${({ theme }) => theme.colors.tertiary};
+      color: ${({ theme }) => theme.colors?.tertiary};
+      fill: ${({ theme }) => theme.colors?.tertiary};
     }
     }
     .media-links {
@@ -112,14 +112,14 @@ export const Links = styled.ul`
       right: 138px;
       width: 120px;
       text-align: center;
-      background: ${({ theme }) => theme.colors.dropdown};
+      background: ${({ theme }) => theme.colors?.dropdown};
       transition: all 0.2s ease;
       top: 0;
       ul li {
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors?.secondary};
       }
       ul li:hover {
-        color: ${({ theme }) => theme.colors.tertiary};
+        color: ${({ theme }) => theme.colors?.tertiary};
       }
     }
     .media:hover + .media-links,

@@ -1,18 +1,20 @@
 // components/themes/defaultTheme.tsx
 import { DefaultTheme } from "styled-components";
+import { breakpoint, fontSizes, fonts, zIndices } from "./darkTheme";
 
-export const defaultTheme: DefaultTheme = {
+
+export const lightTheme: DefaultTheme = {
   name: "lightmode",
   borderRadius: "4px",
   bodyColor: "#ffffff",
   textColor: "#000000",
   palette: {
     common: {
-      black: "#121212",
+      black: "#212121",
       white: "#ffffff",
     },
     primary: {
-      main: "#3b82f6",
+      main: "#212121",
       contrastText: "#ffffff",
     },
     secondary: {
@@ -20,4 +22,8 @@ export const defaultTheme: DefaultTheme = {
       contrastText: "#ffffff",
     },
   },
+  breakpoint,
+  zIndices,
+  fontSizes,
+  fonts
 };
