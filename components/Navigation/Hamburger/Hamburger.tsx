@@ -4,7 +4,6 @@ import { useState } from "react"
 import Link from "next/link"
 
 import { HamburgerMenu, Menu, Links } from "./index.styled"
-// import PlusOutlineSvg from "../../../../public/svgs/outline-plus"
 
 const Hamburger = () => {
   const [menuOpen, setMenuOpen] = useState(false)

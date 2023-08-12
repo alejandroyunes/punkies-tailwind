@@ -1,7 +1,8 @@
+// pages/index.tsx
 import type { NextPage } from "next"
 import Navigation from "../components/Navigation/Navigation"
 
-const Home: NextPage = () => {
+const PodCast: NextPage = () => {
 
   return (
     <main>
@@ -9,4 +10,4 @@ const Home: NextPage = () => {
     </main>
   );
 };
-export default Home
+export default PodCast

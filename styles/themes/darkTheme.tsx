@@ -60,7 +60,7 @@ export const darkTheme: DefaultTheme = {
         white: "#ffffff",
       },
       primary: {
-        main: "#212121",
+        main: "#8D203D",
         contrastText: "#ffffff",
       },
       secondary: {

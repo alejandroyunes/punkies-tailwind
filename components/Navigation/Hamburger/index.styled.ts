@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const HamburgerMenu = styled.div`
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  z-index: ${({ theme }) => theme.zIndices?.dropdown};
+  z-index: ${({ theme }) => theme.zIndices.dropdown};
 `;
 
 export const Menu = styled.div`
   position: absolute;
   top: 23px;
   right: 0px;
-  z-index: ${({ theme }) => theme.zIndices?.dropdown};
+  z-index: ${({ theme }) => theme.zIndices.dropdown};
   -webkit-user-select: none;
   user-select: none;
   input {
@@ -32,7 +32,7 @@ export const Menu = styled.div`
     right: 20px;
     margin-bottom: 5px;
     position: relative;
-    background: ${({ theme }) => theme.colors?.secondary};
+    background: ${({ theme }) => theme.palette.common.white};
     border-radius: 2px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -49,7 +49,7 @@ export const Menu = styled.div`
   input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(4px, -6px);
-    background: ${({ theme }) => theme.colors?.secondary};
+    background: ${({ theme }) => theme.palette.common.white};
   }
   input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -64,10 +64,10 @@ export const Menu = styled.div`
 `;
 
 export const Links = styled.ul`
-  color: ${({ theme }) => theme.colors?.secondary};
+  color: ${({ theme }) => theme.palette.common.white};
   width: 200px;
   padding: 30px;
-  background: ${({ theme }) => theme.colors?.dropdown};
+  background: ${({ theme }) => theme.palette.common.black};
   position: absolute;
   right: 0;
   top: -40px;
@@ -80,11 +80,10 @@ export const Links = styled.ul`
   li {
     padding: 10px 0;
     font-size: 22px;
-    font-family: ${({ theme }) => theme.fonts?.primary};
     cursor: pointer;
   }
   li:hover {
-    color: ${({ theme }) => theme.colors?.tertiary};
+    color: ${({ theme }) => theme.palette.common.white};
   }
 
   .dropdown {
@@ -131,5 +130,3 @@ export const Links = styled.ul`
   .dropdpown:hover {
   }
 `;
-
-

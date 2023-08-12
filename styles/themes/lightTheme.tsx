@@ -2,7 +2,6 @@
 import { DefaultTheme } from "styled-components";
 import { breakpoint, fontSizes, fonts, zIndices } from "./darkTheme";
 
-
 export const lightTheme: DefaultTheme = {
   name: "lightmode",
   borderRadius: "4px",
@@ -14,7 +13,7 @@ export const lightTheme: DefaultTheme = {
       white: "#ffffff",
     },
     primary: {
-      main: "#212121",
+      main: "#8D203D",
       contrastText: "#ffffff",
     },
     secondary: {

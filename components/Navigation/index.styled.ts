@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LinksWrapper = styled.nav`
+export const DesktopWrapper = styled.nav`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin: 0 auto;
   background: ${({ theme }) => theme.palette.common.black};
@@ -11,7 +11,7 @@ export const LinksContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: 84px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
   }
@@ -45,12 +45,14 @@ export const Menu = styled.div`
       display: flex;
       padding: 0 4px;
     }
-    li:hover {
-      color: #8D203D;
-    }
-    .active {
-      color: #8D203D;
-    }
+  }
+  li:hover {
+    color: ${({ theme }) => theme.palette.primary.main};
+  }
+  .active {
+    font-weight: 600;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.palette.primary.main};
   }
   .dropdown {
     position: relative;
@@ -79,30 +81,15 @@ export const Menu = styled.div`
   }
 `;
 
-export const ArrowContent = styled.div`
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 4px;
-  svg {
-    margin: 8px 0 0 0;
-    transform: rotate(180deg);
-    width: 14px;
-    height: 14px;
-    z-index: ${({ theme }) => theme.zIndices.docked};
-  }
-`;
-
 export const ImageMain = styled.div`
   z-index: ${({ theme }) => theme.zIndices.docked};
   display: flex;
   cursor: pointer;
+  img {
+    padding: 8px 0 0;
+  }
 `;
 
-export const ImagePadding = styled.div`
-  padding: 14px 0 0;
-  width: 260px;
-  height: 94px;
-`;
 export const ImagePaddingMobile = styled.div`
   padding-left: 24px;
   height: 60px;
@@ -114,8 +101,6 @@ export const ImagePaddingMobile = styled.div`
     font-size: 26px;
   }
 `;
-///**  Mobile Menu
-//In case mobile dropdown needs a color height.
 
 export const MobileNav = styled.div`
   display: none;
@@ -123,11 +108,11 @@ export const MobileNav = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* position: fixed; */
-    background-color: ${({ theme }) => theme.bodyColor};
+    background-color: ${({ theme }) => theme.palette.common.black};
     z-index: ${({ theme }) => theme.zIndices.sticky};
   }
 `;
+
 export const MobileLogo = styled.div`
   display: none;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {

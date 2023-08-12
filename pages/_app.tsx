@@ -2,7 +2,6 @@
 import type { AppProps } from "next/app"
 import { ThemeProvider } from "styled-components"
 import { useLocalStorage } from "usehooks-ts"
-import { lightTheme } from "../styles/themes/lightTheme"
 import { GlobalStyle } from "../styles/themes/GlobalStyle"
 import { darkTheme } from "../styles/themes/darkTheme"
 
