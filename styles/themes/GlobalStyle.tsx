@@ -13,12 +13,12 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
   body {
     background-color: ${({ theme }) => theme.bodyColor};
     color: ${({ theme }) => theme.textColor};
-    margin: 0;
-    padding: 0;
     font-weight: normal;
   }
 `;

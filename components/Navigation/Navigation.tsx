@@ -1,9 +1,9 @@
-import { FC } from "react"
 import Link from "next/link"
 import Hamburger from "./Hamburger/Hamburger"
 import { usePathname } from "next/navigation"
 import Logo from '../../public/logos/punkies-logo.png'
 import Image from 'next/image'
+import { ThemeSwitcher } from "../ThemeSwitcher"
 
 import {
   ImagePaddingMobile,
@@ -13,9 +13,9 @@ import {
   LinksContainer,
   MobileNav,
   MobileLogo,
-} from "./index.styled"
+} from "./navigation.styled"
 
-const Navigation: FC = () => {
+export default function Navigation () {
   const pathname = usePathname()
 
   return (
@@ -79,6 +79,7 @@ const Navigation: FC = () => {
                   Contacto
                 </li>
               </Link>
+              <ThemeSwitcher />
             </ul>
           </Menu>
         </LinksContainer>
@@ -97,5 +98,3 @@ const Navigation: FC = () => {
     </>
   )
 }
-
-export default Navigation

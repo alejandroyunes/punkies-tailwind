@@ -1,4 +1,3 @@
-// components/themes/darkTheme.tsx
 import { DefaultTheme } from "styled-components"
 
 export const breakpoint = {
