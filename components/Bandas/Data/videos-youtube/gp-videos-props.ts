@@ -1,21 +1,12 @@
-interface MultimediaProps {
-  videos: {
-    description: string;
-    image: {
-      url: string;
-    };
-    title: string;
-    youtube: string;
-  }[];
-}
+import { PunkiesVideosProps } from "../../../Videos/punkies-videos-props";
 
-export const gpVideosProps: MultimediaProps = {
-  videos: [
+export const gpVideosProps: PunkiesVideosProps = {
+  items: [
     {
       title: "Festival Campo Valdes",
       description: "G.P. en vivo Festival Campo Valdes.",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/campo.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/campo_terprf.jpg",
       },
       youtube: "https://www.youtube.com/embed/wtamejQ6Kvg",
     },
@@ -23,7 +14,7 @@ export const gpVideosProps: MultimediaProps = {
       title: "El Analista",
       description: "Recuerdos de la grabación de: G.P. Para la sociedad 1995.",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/oscar.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/oscar_g9cwod.jpg",
       },
       youtube: "https://www.youtube.com/embed/UYS1rQZmzjQ",
     },
@@ -31,7 +22,7 @@ export const gpVideosProps: MultimediaProps = {
       title: "Ciencia Asesina",
       description: "Campo Valdez - Medellín - 1996.",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/ciencia.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/ciencia_xmshxd.jpg",
       },
       youtube: "https://www.youtube.com/embed/bWGYLRpiiKY",
     },
@@ -39,7 +30,7 @@ export const gpVideosProps: MultimediaProps = {
       title: "Pintura de guerra",
       description: "Álbum Completo (1997).",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/pintura.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/pintura_bubq6e.jpg",
       },
       youtube: "https://www.youtube.com/embed/6tf5PUuvyRI",
     },
@@ -47,7 +38,7 @@ export const gpVideosProps: MultimediaProps = {
       title: "Con las manos arriba",
       description: "Álbum Completo (1993).",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/manos.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/manos_fvojhc.jpg",
       },
       youtube: "https://www.youtube.com/embed/GcovpYrDbns",
     },
@@ -55,7 +46,7 @@ export const gpVideosProps: MultimediaProps = {
       title: "Concierto Para Delinkir",
       description: "Álbum Completo (1999).",
       image: {
-        url: "/resources/multimedia/gp-youtube-thumbnails/koncierto.jpeg",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692218236/koncierto_u14ijq.jpg",
       },
       youtube: "https://www.youtube.com/embed/32sd7buyiGA",
     },

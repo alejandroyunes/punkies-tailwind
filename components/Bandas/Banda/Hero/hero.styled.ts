@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FullWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.bodyColor};
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow-x: hidden;
@@ -25,7 +25,7 @@ export const BandWrapper = styled.div`
 export const BandDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.lg};
   font-family: ${({ theme }) => theme.fonts.secondary};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.textColor};
   text-align: left;
   padding: 0 48px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
@@ -37,14 +37,14 @@ export const BandDescription = styled.p`
   }
   svg, span:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.bodyColor};
   }
 `;
 
 export const ReadMore = styled.a`
   font-size: ${({ theme }) => theme.fontSizes.xl};
   font-family: ${({ theme }) => theme.fonts.secondary};
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.textColor};
   text-decoration: underline;
   cursor: pointer;
 `;
@@ -67,11 +67,11 @@ export const ReadMoreDisco = styled.div`
     font-size: ${({ theme }) => theme.fontSizes["3xl"]};
     text-align: right;
     font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.textColor};
     padding: 0 48px 0 0;
   }
   h3:hover {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.textColor};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
@@ -92,7 +92,7 @@ export const TitleMobile = styled.div`
     margin: -57px auto 0;
     text-align: left;
     font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.textColor};
     padding: 15px 24px 0;
     width: 424px;
     z-index: ${({ theme }) => theme.zIndices.docked};

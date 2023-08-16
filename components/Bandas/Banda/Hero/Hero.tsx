@@ -1,5 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Download from '../../../../public/svgs/download'
 
 import {
   FullWrapper,
@@ -10,8 +12,6 @@ import {
   ReadMore,
   Wrapper,
 } from "./hero.styled";
-import Arrow from "public/svgs/arrow";
-import Download from "public/svgs/download";
 
 interface HeroProps {
   description: string;
@@ -35,7 +35,8 @@ const Hero: FC<HeroProps> = ({
           <BandWrapper>
             <BandDescription>
               {description}
-              <Link href={viewMoreURL}>
+              <Link 
+                href={viewMoreURL}>
                 <ReadMore>
                   <br />
                   Descarga la historia completa
@@ -46,7 +47,12 @@ const Hero: FC<HeroProps> = ({
 
             <ImageDiv>
               <div>
-                <img src={imgUrl} alt={imgAlt} />
+                <Image
+                  src={imgUrl} 
+                  alt={imgAlt} 
+                  width={330}
+                  height={330}
+                  />
               </div>
               <Link href={fullDiscographyURL}>
                 <ReadMoreDisco>
