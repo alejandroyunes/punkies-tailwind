@@ -1,6 +1,5 @@
-import { FC } from "react";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
-import Discografia from "../../components/Bandas/Albums";
+import Album from "../../components/Bandas/Albums";
 import Social from "../../components/Discrography/Social";
 
 import { FullWrapper, GpPadding } from "./discography.styled";
@@ -9,7 +8,7 @@ import { jimmyProps } from "./data/jimmy-data";
 import { punkiesProps } from "./data/punkies-data";
 import { gpProps } from "./data/gp-data";
 
-const Discography: FC = () => {
+export default function Discography () {
   return (
     <>
       <FullWrapper>
@@ -22,7 +21,7 @@ const Discography: FC = () => {
           backMessage={"volver"}
         />
         <Social punkies={true} socialText={true}></Social>
-        <Discografia albums={punkiesProps.albums} />
+        <Album albums={punkiesProps.albums} />
         <Breadcrumb
           breadcrumId="jimmy-jazz-discography"
           title="Jimmy Jazz"
@@ -32,7 +31,7 @@ const Discography: FC = () => {
           backMessage={"volver"}
         />
         <Social punkies={false} socialText={false}></Social>
-        <Discografia albums={jimmyProps.albums} />
+        <Album albums={jimmyProps.albums} />
         <Breadcrumb
           breadcrumId="gp-discography"
           title="GP"
@@ -42,9 +41,8 @@ const Discography: FC = () => {
           backMessage={"volver"}
         />
         <GpPadding />
-        <Discografia albums={gpProps.albums} />
+        <Album albums={gpProps.albums} />
       </FullWrapper>
     </>
   );
 };
-export default Discography;

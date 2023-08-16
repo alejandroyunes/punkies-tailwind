@@ -6,7 +6,9 @@ export const BodyWrapper = styled.div`
 export const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.breakpoint.md};
   margin: 16px auto 0;
+  padding: 0 16px;
   display: grid;
+  gap: 8px;
   grid-template-columns: repeat(4, 1fr);
   @media (max-width: 1300px) {
     grid-template-columns: repeat(3, 1fr);
@@ -14,9 +16,7 @@ export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
-    display: none;
-  }
+
   .both:hover .button-active {
     opacity: 1;
   }
@@ -30,15 +30,18 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   cursor: pointer;
 `;
 export const ImageHeading = styled.div`
-  max-width: 280px;
   display: flex;
   transition: 0.5s ease;
   opacity: 1;
   backface-visibility: hidden;
+  img {
+    min-width: 160px;
+    max-width: 260px;
+  }
 `;
 export const MoreButton = styled.div`
   position: absolute;

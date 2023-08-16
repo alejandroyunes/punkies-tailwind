@@ -1,12 +1,13 @@
-import { FC, Key, useState, useEffect } from "react";
-import Breadcrumb from "components/Breadcrumb/Breadcrumb";
+import { FC, useState } from "react";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import { useRouter } from "next/router";
-import Arrow from "public/svgs/arrow";
+import Arrow from "../../public/svgs/arrow";
 import Head from "next/head";
+import Image, { StaticImageData } from "next/image";
 
-import NavPadding from "components/Navigation/NavPadding/NavPadding";
+import NavPadding from "../../components/Navigation/NavPadding/NavPadding";
 
-import { dataLyricsProps } from "components/Bandas/Data/letra";
+import { dataLyricsProps } from "../../components/Bandas/Data/letra";
 
 import { albumProps } from "../../components/Discrography/album-data";
 
@@ -37,17 +38,17 @@ import {
 interface albumProps {
   albums: {
     image: {
-      url: string;
+      url: string
     };
-    comparedAlbum: string;
-    description: string;
-    alt: string;
-    title: string;
-    slug: string;
-    year: number;
-    banda: string;
-    album: string;
-  }[];
+    comparedAlbum: string
+    description: string
+    alt: string
+    title: string
+    slug: string
+    year: number
+    banda: string
+    album: string
+  }[]
 }
 
 const Letras: FC<albumProps> = () => {
@@ -97,7 +98,13 @@ const Letras: FC<albumProps> = () => {
             <ImageWrapper>
               <AlbumImage>
                 {caratulaArray.map((e, i) => (
-                  <img key={i} src={e.image?.url} alt="" />
+                  <Image
+                    key={i}
+                    src={e.image?.url}
+                    alt=""
+                    layout="responsive"
+                    width={260}
+                    height={260} />
                 ))}
               </AlbumImage>
               <AlbumTracks>
@@ -121,7 +128,13 @@ const Letras: FC<albumProps> = () => {
               <AlbumTitleWrapper>
                 <AlbumImageMobile>
                   {caratulaArray.map((e, i) => (
-                    <img key={i} src={e.image?.url} alt={e.album} />
+                    <Image
+                      key={i}
+                      src={e.image?.url}
+                      alt={e.album}
+                      layout="responsive"
+                      width={160}
+                      height={260} />
                   ))}
                 </AlbumImageMobile>
                 <AlbumTitle>
@@ -135,7 +148,7 @@ const Letras: FC<albumProps> = () => {
                   <Year>
                     <h3>
                       {caratulaArray.map((e: any, i: any) => (
-                        <span key={i}>{ `año: ${e.year}`}</span>
+                        <span key={i}>{`año: ${e.year}`}</span>
                       ))}
                     </h3>
                   </Year>

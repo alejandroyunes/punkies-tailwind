@@ -1,17 +1,19 @@
+import { StaticImageData } from "next/image";
+
 export interface IAlbum {
     albums: {
-      band: string;
-      title?: string;
+      band: string
+      title?: string
       image: {
-        url: string;
-    };
-      alt: string;
-      description?: string;
-      year: string;
-      slug: string;
-      album: string;
-      comparedAlbum: string;
-    }[];
+        url: string
+    }
+      alt: string
+      description?: string
+      year: string
+      slug: string
+      album: string
+      comparedAlbum: string
+    }[]
 }
 
 export const albumProps: IAlbum = {
@@ -21,7 +23,7 @@ export const albumProps: IAlbum = {
         title: "Punkies y Cerebro",
         year: "2018",
         image: {
-          url: "/resources/discos-jpg/cualquier.jpeg",
+          url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692172535/cualquier_cjqzxp.jpg",
         },
         description: "Cualquier Parecido Con La Realidad Es Pura Coincidencia",
         alt: "caratula cualquier parecido con la realidad es pura coincidencia",
@@ -263,7 +265,7 @@ export const albumProps: IAlbum = {
         alt: "caratula dies irae",
         slug: "dies-irae",
         image: {
-          url: "resources/discos-jpg/dies-jimmy.webp",
+          url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692173343/dies-irae_lqam6k.jpg",
         },
         album: "Dies Irae",
         comparedAlbum: "dies irae",
@@ -274,7 +276,7 @@ export const albumProps: IAlbum = {
         alt: "unpunked",
         slug: "ununked",
         image: {
-          url: "/resources/discos-jpg/unpunked-jimmy-jazz.webp",
+          url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692173410/unpunked-jimmy-jazz_ayp3s6.webp",
         },
         album: "Unpunked",
         comparedAlbum: "unpunked",
@@ -285,7 +287,7 @@ export const albumProps: IAlbum = {
         alt: "jingles",
         slug: "jingles",
         image: {
-          url: "/resources/discos-jpg/jingles-jimmy.webp",
+          url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1692173426/jingles-jimmy_p4oq6l.webp",
         },
         album: "Unpunked",
         comparedAlbum: "unpunked",

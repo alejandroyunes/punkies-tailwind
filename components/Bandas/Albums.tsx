@@ -5,7 +5,6 @@ import PlusSvg from "../../public/svgs/plus";
 import Image from "next/image";
 import { Carousel } from 'react-responsive-carousel'
 
-
 import {
   Wrapper,
   ImageHeading,
@@ -54,36 +53,16 @@ const Albums: FC<AlbumProps> = ({ albums }) => {
                     <Image
                       src={`${e.image?.url}`}
                       alt={`${e.alt}`}
-                      width={208}
-                      height={208}
                       className="image-active"
+                      layout="responsive"
+                      width={260}
+                      height={260}
                     />
                   </ImageHeading>
                 </Link>
               </Card>
             ))}
         </Wrapper>
-
-        <WrapperMobile>
-          <Carousel>
-            {albums?.length &&
-              albums.map((e, i) => (
-                <>
-                  <CardMobile key={i}>
-                    <Link href={`musica/${e.slug}`}>
-                      <ImageHeading>
-                        <img src={`${e.image?.url}`} alt={`${e.alt}`} />
-                      </ImageHeading>
-                    </Link>
-                  </CardMobile>
-                  <CardMobileTitle>
-                    <p>{e.album}</p>
-                    <p>{e.year}</p>
-                  </CardMobileTitle>
-                </>
-              ))}
-          </Carousel>
-        </WrapperMobile>
       </BodyWrapper>
     </>
   );

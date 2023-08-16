@@ -29,7 +29,6 @@ export const AlbumImage = styled.div`
   padding-right: 24px;
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     display: none;
-    margin: 0 auto;
   }
 `;
 
@@ -40,7 +39,7 @@ export const AlbumImageMobile = styled.div`
     display: block;
     margin-right: 24px;
     img {
-      max-width: 132px;
+      min-width: 160px;
     }
     @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
       margin-right: 10px;
@@ -150,7 +149,7 @@ export const Dropdown = styled.li`
   margin-bottom: 8px;
   cursor: pointer;
   background-color: transparent;
-  outline: 1px solid white;
+  outline: 1px solid ${({ theme }) => theme.textColor};
   color: ${({ theme }) => theme.textColor};
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: 16px;
@@ -187,7 +186,10 @@ export const ArrowContent = styled.div`
   width: 20px;
   height: 20px;
   z-index: ${({ theme }) => theme.zIndices.docked};
-`;
+  svg {
+    fill: ${({ theme }) => theme.textColor};
+  }
+  `;
 export const AlbumTitleWrapper = styled.div`
   display: flex;
 `;
