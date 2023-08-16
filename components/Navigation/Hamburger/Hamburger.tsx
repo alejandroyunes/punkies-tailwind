@@ -17,6 +17,7 @@ const Hamburger = () => {
           type="checkbox"
           checked={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
+          onChange={(e) => { }}
         />
         <span></span>
         <span></span>

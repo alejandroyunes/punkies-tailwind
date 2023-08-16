@@ -1,0 +1,217 @@
+interface ConcertProps {
+  concerts: {
+    date: string;
+    evento: string;
+    lugar: string;
+    price: string;
+    fecha: string;
+  }[];
+}
+
+export const concertsData: ConcertProps = {
+  concerts: [
+    {
+      date: "2023-05-19",
+      fecha: "19 de Mayo, 2023",
+      evento: "Viboral Rock",
+      lugar: "Polideportivo Municipal Jesús Antonio Martínez Moreno",
+      price: "libre",
+    },
+    {
+      date: "2023-05-06",
+      fecha: "6 de Mayo, 2023",
+      evento: "Aniversario Los Suziox",
+      lugar: "Centro de eventos Centauro",
+      price: "pre 80k",
+    },
+    {
+      date: "2023-04-01",
+      fecha: "1 de Abril, 2023",
+      evento: "Unpunked",
+      lugar: "La Cueva Cultural",
+      price: "10k",
+    },
+    {
+      date: "2023-01-28",
+      fecha: "28 de Ene, 2023",
+      evento: "Lanzamiento Libro",
+      lugar: "Sala ensayo Plug",
+      price: "15k",
+    },
+    {
+      date: "2023-01-15",
+      fecha: "15 de Ene, 2023",
+      evento: "Punkies a la escuela",
+      lugar: "Cancha 'El Tierrero'",
+      price: "kit escolar",
+    },
+    {
+      date: "2022-12-23",
+      fecha: "23 de Dic, 2022",
+      evento: "Punk en la Fonda",
+      lugar: "Calle 61 # 129-68 local 201, San Cristobal",
+      price: "12k",
+    },
+    {
+      date: "2022-12-09",
+      fecha: "9 de Dic, 2022",
+      evento: "Aniversario Ágora, 20 años",
+      lugar: "Cra. 49 # 94-24 2do. piso, Aranjuez",
+      price: "aporte",
+    },
+    {
+      date: "2022-12-03",
+      fecha: "3 de Dic, 2022",
+      evento: "33 Años de Punk Combativo y Subterráneo",
+      lugar: "Teatro Matacandelas",
+      price: "50k",
+    },
+    {
+      date: "2022-11-26",
+      fecha: "26 de Nov, 2022",
+      evento: "Residuos del Virus III",
+      lugar: "Casa Cultural y Ancestral - Palmira, Cali",
+      price: "40K",
+    },
+    {
+      date: "2022-11-12",
+      fecha: "12 de Nov, 2022",
+      evento: "Punkies y Cerebro",
+      lugar: "Speed Punk Hardcore Fest VII - Neiva, Huila",
+      price: "40k",
+    },
+    {
+      date: "2022-11-05",
+      fecha: "5 de Nov, 2022",
+      evento: "Jimmy Jazz Unpunked",
+      lugar: "Calle 17 # 97 48 - Bogotá",
+      price: "20k",
+    },
+    {
+      date: "2022-11-04",
+      fecha: "4 de Nov, 2022",
+      evento: "Punkies y Cerebro",
+      lugar: "Teatro Carlos Vieco",
+      price: "libre",
+    },
+    {
+      date: "2022-9-24",
+      fecha: "24 de Sep, 2022",
+      evento: "Jimmy Jazz Unpunked",
+      lugar: "Calle 64A # 78A 31",
+      price: "10k",
+    },
+    {
+      date: "2022-08-19",
+      fecha: "19 de Ago, 2022",
+      evento: "Jimmy Jazz Unpunked",
+      lugar: "A Fuego - Cl 120 A #6 - 23 Bogotá",
+      price: "10k",
+    },
+    {
+      date: "2022-08-13",
+      fecha: "13 de Ago, 2022",
+      evento: "Punkies Y Cerebro",
+      lugar: "Anti Social Club - Av 33 #76 - 100",
+      price: "15k",
+    },
+    {
+      date: "2022-07-15",
+      fecha: "15 de Jul, 2022",
+      evento: "Jimmy Jazz Unpunked",
+      lugar: "Madre Monte - Cl 2 Sur #51 b 23",
+      price: "aporte",
+    },
+    {
+      date: "2022-07-02",
+      fecha: "2 de Jul, 2022",
+      evento: "Sónelo en la vereda ",
+      lugar: "Vereda La Chapa. El Carmende V. *  15k en puerta",
+      price: "10k",
+    },
+    {
+      date: "2022-06-17",
+      fecha: "17 de Jun, 2022",
+      evento: "Jimmy Jazz Punk Acústico",
+      lugar: "UdeA",
+      price: "gratis",
+    },
+    {
+      date: "2022-06-04",
+      fecha: "04 de Jun, 2022",
+      evento: "Toma cultural por la no violencia",
+      lugar: "Parque Ambiental - La Tablaza",
+      price: "gratis",
+    },
+    // {
+    //   date: "2022-04-30",
+    //   fecha: "30 de Abr, 2022",
+    //   evento: "Fiesta del obrero",
+    //   lugar: "Cll. 56 sur 721 -14 Casa Cultural nuevo Chile",
+    //   price: "30k",
+    // },
+    // {
+    //   date: "2022-05-13",
+    //   fecha: "13 de May, 2022",
+    //   evento: "Banderas Apocalípticas",
+    //   lugar: "facebook live",
+    //   price: "gratis",
+    // },
+    // {
+    //   date: "2022-05-21",
+    //   fecha: "21 de Mar, 2022",
+    //   evento: "Casa Lesmes",
+    //   lugar: "Cr. 50 C # 102-23 - Santa Cruz",
+    //   price: "10k",
+    // },
+    // {
+    //   date: "2022-04-02",
+    //   fecha: "02 de Abr, 2022",
+    //   evento: "Punkies a la escuela",
+    //   lugar: "Parque juanes",
+    //   price: "gratis",
+    // },
+    // {
+    //   date: "2022-03-26",
+    //   fecha: "26 de Mar, 2022",
+    //   evento: "La música como resistencia 2",
+    //   lugar: "Trigo y Aromas ",
+    //   price: "aporte",
+    // },
+    // {
+    //   date: "2021-10-30",
+    //   fecha: "30 de Oct, 2021",
+    //   evento: "Jimmy Jazz (G.P)",
+    //   lugar: "MorganGrill - Carrera 43B #10-63",
+    //   price: "aporte",
+    // },
+    // {
+    //   date: "2021-08-26",
+    //   fecha: "06 de Ago, 2021",
+    //   evento: "Banderas Tegónicas",
+    //   lugar: "Facebook Live",
+    //   price: "gratis",
+    // },
+    // {
+    //   date: "2021-10-17",
+    //   fecha: "17 de Oct, 2021",
+    //   evento: "Noche Punk",
+    //   lugar: "Calle 24 #7-81 Local 207 - Pereira",
+    //   price: "20k",
+    // },
+    // {
+    //   date: "2021-10-08",
+    //   fecha: "08 de Oct, 2021",
+    //   evento: "Trocha Libertaria",
+    //   lugar: "La casa de la paz",
+    //   price: "gratis",
+    // },
+    // {
+    //   date: "2021-10-02",
+    //   fecha: "02 de Oct, 2022",
+    //   evento: "Regreso a Bogotá",
+    //   lugar: "Cra. 7ma #45-72",
+    //   price: "35k",
+    // },
+  ],
+};
