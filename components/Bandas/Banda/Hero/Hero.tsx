@@ -50,17 +50,15 @@ const Hero: FC<HeroProps> = ({
                 <Image
                   src={imgUrl} 
                   alt={imgAlt} 
-                  width={330}
-                  height={330}
+                  width={310}
+                  height={300}
                   />
               </div>
-              <Link href={fullDiscographyURL}>
                 <ReadMoreDisco>
                   <Link href={fullDiscographyURL}>
                       <h3>ver discografia completa</h3>
                   </Link>
                 </ReadMoreDisco>
-              </Link>
             </ImageDiv>
           </BandWrapper>
         </Wrapper>

@@ -1,6 +1,7 @@
 import { FC, useMemo, useState } from "react";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Button from "../../components/Button/Button";
+import Image from "next/image";
 import {
   Title,
   BodyWrapper,
@@ -13,7 +14,7 @@ import {
   BandReadMoreButton,
   BandDescriptionWrapper,
   BreadcrumbWrapper,
-  Image,
+  ImageWrapper,
 } from "./history.styled";
 
 import { briefBandHistoryProps } from "../Bandas/Data/brief-band-history-props";
@@ -61,12 +62,15 @@ const History: FC = () => {
                   backMessage={"inicio"}
                 />
               </BreadcrumbWrapper>
-              <Image>
-                <img src={e.image} alt={e.alt} />
-              </Image>
+              <ImageWrapper>
+                <Image
+                  src={e.image}
+                  alt={e.alt}
+                  width={390}
+                  height={220} />
+              </ImageWrapper>
               <BandDescriptionWrapper>
                 <BandDescription>{e.description}</BandDescription>
-
                 <BandReadMoreButton>
                   <Button
                   buttonText={"leer más"}

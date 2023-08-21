@@ -70,8 +70,11 @@ export const BreadcrumbWrapper = styled.div`
   }
 `;
 
-export const Image = styled.div`
+export const ImageWrapper = styled.div`
   display: block;
+  img {
+    max-width: 424px;
+  }
 `;
 export const BandDescriptionWrapper = styled.div`
   display: flex;

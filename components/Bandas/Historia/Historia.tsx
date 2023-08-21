@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 // import ReactHtmlParser from "react-html-parser";
-import Arrow from "public/svgs/arrow";
+import Arrow from "../../../public/svgs/arrow";
 import {
   Title,
   BodyWrapper,

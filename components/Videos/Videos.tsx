@@ -2,7 +2,6 @@ import {  useState } from "react"
 import YoutubeIcon from "../../public/svgs/youtube-icon"
 import { Wrapper } from "../Wrapper/wrapper.styled"
 import Image from "next/image"
-import imagex from '../../public/multimedia/punkies-youtube-thumbnails/bodas.webp'
 
 import {
   Container,
@@ -19,7 +18,7 @@ import {
   VideoYoutube,
   ImageWrapper,
 } from "./videos-youtube.styled";
-import { PunkiesVideosProps } from "./punkies-videos-props";
+import { PunkiesVideosProps } from "../Bandas/Data/videos-youtube/punkies-videos-props";
 
 export default function Videos ({ items }: PunkiesVideosProps)   {
 
@@ -44,7 +43,7 @@ export default function Videos ({ items }: PunkiesVideosProps)   {
                 <Image
                   src={e.image.url} 
                   alt="punkies y cerebro videos"
-                  width={200}
+                  width={312}
                   height={200} />
               </ImageWrapper>
             </ImageDiv>

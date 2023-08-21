@@ -59,8 +59,14 @@ export const YoutubeIconDiv = styled.div`
 
 export const ImageWrapper = styled.div`
   img {
-    width: 312px;
+    max-width: 100%;
     max-height: 177px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+    img {
+      max-width: 100%;
+      max-height: 177px;
+   }
   }
 `;
 export const Title = styled.div`
@@ -137,7 +143,7 @@ export const VideoYoutube = styled.iframe<VideoProps>`
   width: 100%;
   height: 100%;
   border: none;
-  background-color: ${({ theme }) => theme.textColor};
+  background-color: ${({ theme }) => theme.bodyColor};
 `;
 
 export const ExitButton = styled.div<VideoProps>`

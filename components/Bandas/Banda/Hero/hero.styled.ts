@@ -16,7 +16,7 @@ export const BandWrapper = styled.div`
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 32px;
   }
@@ -28,6 +28,7 @@ export const BandDescription = styled.p`
   color: ${({ theme }) => theme.textColor};
   text-align: left;
   padding: 0 48px;
+  font-weight: 300;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding: 0 24px;
   }
@@ -53,8 +54,12 @@ export const ImageDiv = styled.div`
   img {
     width: 100%;
     padding: 0 48px 0 0;
+    max-width: 100%;
+    max-height: 320px;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+    max-width: 100%;
+    max-height: 280px;
     img {
       padding: 24px 24px 8px;
     }
@@ -63,6 +68,9 @@ export const ImageDiv = styled.div`
 
 export const ReadMoreDisco = styled.div`
   cursor: pointer;
+  a {
+    text-decoration: none;
+  }
   h3 {
     font-size: ${({ theme }) => theme.fontSizes["3xl"]};
     text-align: right;
