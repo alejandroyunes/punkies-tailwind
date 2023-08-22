@@ -4,7 +4,6 @@ export const FullWrapper = styled.div`
   background-color: ${({ theme }) => theme.bodyColor};
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  overflow-x: hidden;
 `;
 export const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.breakpoint.md};

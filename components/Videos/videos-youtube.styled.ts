@@ -124,7 +124,7 @@ export const VideoYoutubeWrapper = styled.div<VideoProps>`
   height: 500px;
   width: 880px;
   background-color: ${({ openVideo, theme }) =>
-    openVideo === false ? "transparent;" : theme.bodyColor};
+    openVideo === false ? "red" : theme.bodyColor};
 
   z-index: ${({ openVideo, theme }) =>
     openVideo === false ? theme.zIndices.hide : theme.zIndices.tooltip};

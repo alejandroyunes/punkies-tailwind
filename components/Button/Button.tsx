@@ -23,21 +23,18 @@ const Button: FC<ButtonProps> = ({
   return (
     <Wrapper width={width}>
       {download ? (
-        <Link
-          href={`${link}`}>
-          {/* <div className='btn btn-three'> */}
+        <div className='btn btn-three'>
+          <Link
+            href={`${pdf}`}>
             <span>{buttonText}</span>
-          {/* </div> */}
-        </Link>
-
+          </Link>
+        </div>
       ) : (
-        <Link href={`${link}`}
-          target={externalLink ? '_blank' : ''}
-        >
-          <div className='btn btn-three'>
+        <div className='btn btn-three'>
+          <Link href={`${link}`} target={externalLink ? '_blank' : ''}>
             <span>{buttonText}</span>
-          </div>
-        </Link>
+          </Link>
+        </div>
       )}
     </Wrapper>
   )

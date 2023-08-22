@@ -51,7 +51,7 @@ const Hero: FC<HeroProps> = ({
                   src={imgUrl} 
                   alt={imgAlt} 
                   width={310}
-                  height={300}
+                  height={260}
                   />
               </div>
                 <ReadMoreDisco>
