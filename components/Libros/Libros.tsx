@@ -25,7 +25,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Wrapper } from "../Wrapper/wrapper.styled";
 
-
 const Libros: FC = () => {
   const [libros, setLibros] = useState<LibrosProps>();
 
@@ -54,7 +53,7 @@ const Libros: FC = () => {
                 height={280} />
             </ItemImg>
             <ItemDescription>
-              <Button buttonText="Descargar" download={true} pdf={e.pdf} />
+              <Button buttonText="Descargar" download={true} pdf={`${e.pdf}`} />
             </ItemDescription>
             <ItemDescription>
               <h3>

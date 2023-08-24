@@ -18,19 +18,19 @@ export const Wrapper = styled.button<ButtonProps>`
   a {
     text-decoration: none;
   }
-  .btn {
+  .btn, a {
     line-height: 50px;
     height: 50px;
     text-align: center;
     width: ${({width}) => (width ? width : '250px')};
     cursor: pointer;
   }
-  .btn-three {
+  .btn-three, a {
     color: #fff;
     transition: all 0.5s;
     position: relative;
   }
-  .btn-three::before {
+  .btn-three::before, a:before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,11 +41,11 @@ export const Wrapper = styled.button<ButtonProps>`
     background-color: rgba(141, 32, 61, 0.3);
     transition: all 0.3s;
   }
-  .btn-three:hover::before {
+  .btn-three:hover::before, a:hover::before {
     opacity: 0;
     transform: scale(0.5, 0.5);
   }
-  .btn-three::after {
+  .btn-three::after, a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ export const Wrapper = styled.button<ButtonProps>`
     border: 1px solid rgba(255, 255, 255, 0.5);
     transform: scale(1.2, 1.2);
   }
-  .btn-three:hover::after {
+  .btn-three:hover::after, a:hover:after {
     opacity: 1;
     transform: scale(1, 1);
   }
