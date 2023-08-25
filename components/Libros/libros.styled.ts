@@ -50,6 +50,6 @@ export const ItemDescription = styled.div`
     color: ${({ theme }) => theme.palette.common.white};
   }
   span {
-    color: ${({ theme }) => theme.palette.common.white};
+    color: ${({ theme }) => theme.textColor};
   }
 `;

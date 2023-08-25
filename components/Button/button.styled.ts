@@ -14,10 +14,12 @@ export const Wrapper = styled.button<ButtonProps>`
   justify-content: center;
   span {
     font-size: ${({ theme }) => theme.fontSizes.lg};
+    color: ${({ theme }) => theme.textColor};
   }
   a {
     text-decoration: none;
   }
+
   .btn, a {
     line-height: 50px;
     height: 50px;
@@ -26,7 +28,7 @@ export const Wrapper = styled.button<ButtonProps>`
     cursor: pointer;
   }
   .btn-three, a {
-    color: #fff;
+    color:  ${({ theme }) => theme.textColor};
     transition: all 0.5s;
     position: relative;
   }
@@ -55,7 +57,7 @@ export const Wrapper = styled.button<ButtonProps>`
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid  ${({ theme }) => theme.textColor};
     transform: scale(1.2, 1.2);
   }
   .btn-three:hover::after, a:hover:after {
