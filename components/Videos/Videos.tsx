@@ -1,4 +1,4 @@
-import {  useState } from "react"
+import { useState } from "react"
 import YoutubeIcon from "../../public/svgs/youtube-icon"
 import { Wrapper } from "../Wrapper/wrapper.styled"
 import Image from "next/image"
@@ -20,56 +20,58 @@ import {
 } from "./videos-youtube.styled";
 import { PunkiesVideosProps } from "../Bandas/Data/videos-youtube/punkies-videos-props";
 
-export default function Videos ({ items }: PunkiesVideosProps)   {
+export default function Videos({ items }: PunkiesVideosProps) {
 
   const [video, setvideo] = useState(false)
   const [videoUrl, setvideoUrl] = useState("")
 
   return (
-    <Wrapper>
-      <Container>
-        {items.map((e, i) => (
-          <NewsWrapper key={i}>
-            <ImageDiv
-              onClick={() => {
-                setvideo(true);
-                setvideoUrl(e.youtube);
-              }}
-            >
-              <YoutubeIconDiv>
-                <YoutubeIcon />
-              </YoutubeIconDiv>
-              <ImageWrapper>
-                <Image
-                  src={e.image.url} 
-                  alt="punkies y cerebro videos"
-                  width={312}
-                  height={200} />
-              </ImageWrapper>
-            </ImageDiv>
-            <Title>{e.title}</Title>
+    <>
+      <Wrapper>
+        <Container>
+          {items.map((e, i) => (
+            <NewsWrapper key={i}>
+              <ImageDiv
+                onClick={() => {
+                  setvideo(true);
+                  setvideoUrl(e.youtube);
+                }}
+              >
+                <YoutubeIconDiv>
+                  <YoutubeIcon />
+                </YoutubeIconDiv>
+                <ImageWrapper>
+                  <Image
+                    src={e.image.url}
+                    alt="punkies y cerebro videos"
+                    width={312}
+                    height={200} />
+                </ImageWrapper>
+              </ImageDiv>
+              <Title>{e.title}</Title>
 
-            <DescriptionWrapper>
-              <Description>
-                {e.description}
-              </Description>
-            </DescriptionWrapper>
-          </NewsWrapper>
-        ))}
+              <DescriptionWrapper>
+                <Description>
+                  {e.description}
+                </Description>
+              </DescriptionWrapper>
+            </NewsWrapper>
+          ))}
+        </Container>
+      </Wrapper>
 
-        <VideoOverlay openVideo={video}>
-          <ExitButton onClick={() => setvideo(!video)}>
-            <span></span>
-            <span></span>
-          </ExitButton>
-        </VideoOverlay>
-        <VideoYoutubeWrapper openVideo={video}>
-          <VideoYoutube
-            src={video ? videoUrl + "?autoplay=1" : ""}
-            allow="fullscreen; autoplay;"
-          />
-        </VideoYoutubeWrapper>
-      </Container>
-    </Wrapper>
+      <VideoOverlay openVideo={video}>
+        <ExitButton onClick={() => setvideo(!video)}>
+          <span></span>
+          <span></span>
+        </ExitButton>
+      </VideoOverlay>
+      <VideoYoutubeWrapper openVideo={video}>
+        <VideoYoutube
+          src={video ? videoUrl + "?autoplay=1" : ""}
+          allow="fullscreen; autoplay;"
+        />
+      </VideoYoutubeWrapper>
+    </>
   );
 };

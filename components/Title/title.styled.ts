@@ -4,18 +4,17 @@ export const TitleContainer = styled.div`
   background: ${({ theme }) => theme.bodyColor};
   max-width: ${({ theme }) => theme.breakpoint.md};
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 28px 0 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding: 16px 0 16px;
+  }
   h3 {
     text-align: center;
     font-size: ${({ theme }) => theme.fontSizes["2xl"]};
     letter-spacing: 4px;
     color: ${({ theme }) => theme.textColor};
     font-family: ${({ theme }) => theme.fonts.primary};
-    @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
-      padding: 16px 0;
-    }
-  }
-  
+  }  
   h2 {
     text-align: center;
     margin: 0 auto;
@@ -26,9 +25,6 @@ export const TitleContainer = styled.div`
     max-width: 600px;
     @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
       font-size: 1rem;
-    }
-    @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
-      padding-bottom: 0;
     }
   }
 `;

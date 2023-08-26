@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Concert />
       <Title title={"Videos"} />
       <Videos items={punkiesVideosProps.items} />
-
+      <br />
     </main>
   );
 };

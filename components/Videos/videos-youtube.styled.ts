@@ -118,7 +118,7 @@ export const VideoOverlay = styled.div<VideoProps>`
 
 export const VideoYoutubeWrapper = styled.div<VideoProps>`
   position: fixed;
-  top: 25%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
   height: 500px;
@@ -148,9 +148,9 @@ export const VideoYoutube = styled.iframe<VideoProps>`
 
 export const ExitButton = styled.div<VideoProps>`
   position: fixed;
-  top: 5%;
+  top: 2%;
   right: 5%;
-  padding: 48px;
+  padding: 32px;
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     right: 0%;
   }

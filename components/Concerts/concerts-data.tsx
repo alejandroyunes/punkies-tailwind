@@ -21,7 +21,7 @@ export const concertsData: ConcertProps = {
       date: "2023-08-18",
       fecha: "18 de Agosto, 2023",
       evento: "Festival Artiscio y Cultural, LDS",
-      lugar: "Cra. 42A nor 85-159",
+      lugar: "Cra. 42A # 85-159",
       price: "Libre",
     },
     {
