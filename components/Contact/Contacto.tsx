@@ -36,43 +36,43 @@ const Contact: FC = () => {
         <WrapperSocial>
           <WrapperChild>
             <Link href={`https://www.facebook.com/punkiesycerebro`} target="_blank">
-                <Facebook />
+              <Facebook />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://www.instagram.com/punkiesycerebro/`} target="_blank">
-                <Instagram />
+              <Instagram />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://music.amazon.com/artists/B0752B6RCB/punkies-y-cerebro`} target="_blank">
-                <AmazonMusic />
+              <AmazonMusic />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://soundcloud.com/punkiesycerebro`} target="_blank">
-                <SoundCloud />
+              <SoundCloud />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://www.youtube.com/c/punkiesycerebro/featured`} target="_blank">
-                <YoutubeIcon />
+              <YoutubeIcon />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://open.spotify.com/artist/6Nq4YQd4JdWvtY3HrgvYK7`} target="_blank">
-                <Spotify />
+              <Spotify />
             </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href={`https://open.spotify.com/artist/6Nq4YQd4JdWvtY3HrgvYK7`}>
-              <Link
-                href="https://chat.whatsapp.com/G058cwxphqPBRv1xuUII2w"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Whatapp />
-              </Link>
+            </Link>
+            <Link
+              href="https://chat.whatsapp.com/G058cwxphqPBRv1xuUII2w"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Whatapp />
             </Link>
           </WrapperChild>
         </WrapperSocial>
@@ -89,23 +89,18 @@ const Contact: FC = () => {
             <p>Teléfono: 304 669 5598</p>
             <h2>¿Quieres recibir notificaciones de los eventos de Punkies y Cerebro o Jimmy Jazz? Escanea el código QR y listo.</h2>
             <div>
-              <Link href={`https://open.spotify.com/artist/6Nq4YQd4JdWvtY3HrgvYK7`}>
-                <Link
-                  href="https://chat.whatsapp.com/G058cwxphqPBRv1xuUII2w"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693007195/contacto/p1jei7mbcwqsyp3ze6yb.webp"
-                    alt="Jimmy Jazz - Jaime López Punkie Gp"
-                  />
-                </Link>
+              <Link
+                href="https://chat.whatsapp.com/G058cwxphqPBRv1xuUII2w"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693007195/contacto/p1jei7mbcwqsyp3ze6yb.webp"
+                  alt="qr"
+                />
               </Link>
             </div>
-
           </ContactItem>
-
-
           <ContactImages>
             <Image>
               <img

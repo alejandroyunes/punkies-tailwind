@@ -75,6 +75,10 @@ export const ContactItem = styled.section`
   max-width: 200px;
   margin: 24px auto 16px;
 }
+img {
+  width: 200px;
+  height: 200px;
+}
 `;
 
 export const ContactImages = styled.section`
@@ -93,7 +97,15 @@ export const ContactImages = styled.section`
 export const Image = styled.section`
   padding: 0 16px 16px;
   width: 100%;
+  img {
+    width: 100%;
+    height: 320px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 0 8px 8px;
+    img {
+      width: 100%;
+      height: 240px;
+    }
   }
 `;

@@ -42,7 +42,7 @@ export const fontSizes = {
 }
 
 export const fonts = {
-  primary: '"New Rocker", cursive',
+  primary: '"Lato", sans-serif',
   secondary: '"Lato", sans-serif',
   tertiary: '"Lato", sans-serif',
   foutiary: '"Open Sans", sans-serif'
