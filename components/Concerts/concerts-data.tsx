@@ -10,6 +10,34 @@ interface ConcertProps {
 
 export const concertsData: ConcertProps = {
   concerts: [
+        {
+      date: "2023-08-26",
+      fecha: "26 de Agosto, 2023",
+      evento: "Festival Artiscio y Cultural, RXN",
+      lugar: "Calle 71 # 39-2 parque Gaitan",
+      price: "Libre",
+    },
+    {
+      date: "2023-08-18",
+      fecha: "18 de Agosto, 2023",
+      evento: "Festival Artiscio y Cultural, LDS",
+      lugar: "Cra. 42A nor 85-159",
+      price: "Libre",
+    },
+    {
+      date: "2023-08-06",
+      fecha: "06 de Agosto, 2023",
+      evento: "Punkies Y Cerebro en Bogotá",
+      lugar: "The Music hall",
+      price: "30k",
+    },
+    {
+      date: "2023-08-05",
+      fecha: "05 de Agosto, 2023",
+      evento: "El punk no muere 4",
+      lugar: "Calle 9 # 40-10",
+      price: "80k",
+    },
     {
       date: "2023-05-19",
       fecha: "19 de Mayo, 2023",
