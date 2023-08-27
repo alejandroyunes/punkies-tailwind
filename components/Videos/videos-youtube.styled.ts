@@ -28,7 +28,7 @@ export const Container = styled.div`
 
 export const NewsWrapper = styled.div`
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 300px;
   outline: 1px solid ${({ theme }) => theme.textColor};
   padding: 24px 24px 8px;
   display: flex;
@@ -70,7 +70,7 @@ export const ImageWrapper = styled.div`
   }
 `;
 export const Title = styled.div`
-  font-size: ${({ theme }) => theme.fontSizes["2xl"]};
+  font-size: ${({ theme }) => theme.fontSizes.md};
   color: ${({ theme }) => theme.textColor};
   font-family: ${({ theme }) => theme.fonts.primary};
   padding: 8px 0;
@@ -84,7 +84,7 @@ export const DescriptionWrapper = styled.div`
 `;
 
 export const Description = styled.div`
-  font-size: ${({ theme }) => theme.fontSizes.lg};
+  font-size: ${({ theme }) => theme.fontSizes.md};
   color: ${({ theme }) => theme.textColor};
   font-family: ${({ theme }) => theme.fonts.secondary};
   padding: 8px 0;
@@ -129,10 +129,7 @@ export const VideoYoutubeWrapper = styled.div<VideoProps>`
   z-index: ${({ openVideo, theme }) =>
     openVideo === false ? theme.zIndices.hide : theme.zIndices.tooltip};
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
-    height: 400px;
-    width: 580px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+   top: 25%;
     height: 230px;
     width: 100%;
   }
