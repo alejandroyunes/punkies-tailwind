@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TitleWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.bodyColor};
   margin: 0 auto;
   padding: 32px 24px;
 
