@@ -1,5 +1,4 @@
 import './globals.css'
-import { ThemeProvider } from './modules/ThemeProvider'
 import { Metadata } from 'next'
 import { Inter } from "next/font/google";
 // import Navigation from './components/Navigation/Navigation';
