@@ -5,13 +5,13 @@ interface HistoryProps {
 }
 
 export const BodyWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.bodyColor};
   width: 100%;
 `;
 
 export const ContentWrapper = styled.div`
   width: ${({ theme }) => theme.breakpoint.md};
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.bodyColor};
   margin: 0 auto;
   scroll-behavior: smooth;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
