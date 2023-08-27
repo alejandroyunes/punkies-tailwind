@@ -1,6 +1,5 @@
-import { PunkiesVideosProps } from "../../../Videos/punkies-videos-props";
 
-export const gpVideosProps: PunkiesVideosProps = {
+export const gpVideosProps = {
   items: [
     {
       title: "Festival Campo Valdes",
