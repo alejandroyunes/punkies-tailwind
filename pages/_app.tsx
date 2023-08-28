@@ -5,6 +5,7 @@ import { useLocalStorage } from "usehooks-ts"
 import { GlobalStyle } from "../styles/themes/GlobalStyle"
 import { darkTheme } from "../styles/themes/darkTheme"
 import Navigation from "../components/Navigation/Navigation"
+import Footer from "../components/Footer"
 
 function PunkiesApp({ Component, pageProps }: AppProps) {
   const [theme] = useLocalStorage("theme", darkTheme)
@@ -14,6 +15,7 @@ function PunkiesApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Navigation />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   )
 }
