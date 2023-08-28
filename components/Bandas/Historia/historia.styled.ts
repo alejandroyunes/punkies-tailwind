@@ -24,7 +24,7 @@ export const Title = styled.h1`
   text-align: center;
   margin-top: 32px;
   font-family: ${({ theme }) => theme.fonts.secondary};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.palette.common.white};
 `;
 
 export const Content = styled.section`
@@ -32,7 +32,7 @@ export const Content = styled.section`
   margin-top: 32px;
   font-size: ${({ theme }) => theme.fontSizes.lg};
   font-family: ${({ theme }) => theme.fonts.secondary};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.palette.common.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding: 0 24px;
   }
@@ -55,7 +55,7 @@ export const Reading = styled.div`
     text-align: center;
     font-size: ${({ theme }) => theme.fontSizes.lg};
     font-family: ${({ theme }) => theme.fonts.secondary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.palette.common.white};
   }
 `;
 export const ArrowContent = styled.div<HistoryProps>`
@@ -88,7 +88,7 @@ export const ReadingNext = styled.div`
     text-align: center;
     font-size: ${({ theme }) => theme.fontSizes.lg};
     font-family: ${({ theme }) => theme.fonts.secondary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.palette.common.white};
   }
 `;
 export const ArrowContentNext = styled.div`
