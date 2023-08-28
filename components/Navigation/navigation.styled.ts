@@ -33,14 +33,14 @@ export const Menu = styled.div`
       svg {
         height: 20px;
         width: 20px;
-        color: white;
+        color: ${({ theme }) => theme.palette.common.white};
       }
     }
   }
   li {
     display: inline-flex;
     padding: 0 12px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     cursor: pointer;
     font-family: ${({ theme }) => theme.fonts.primary}

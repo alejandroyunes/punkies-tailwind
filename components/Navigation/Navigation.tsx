@@ -16,6 +16,7 @@ import {
 } from "./navigation.styled"
 
 export default function Navigation () {
+  
   const pathname = usePathname()
 
   return (
