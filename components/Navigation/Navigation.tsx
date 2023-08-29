@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Hamburger from "./Hamburger/Hamburger"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import Logo from '../../public/logos/punkies-logo.png'
 import Image from 'next/image'
 import { ThemeSwitcher } from "../ThemeSwitcher"
@@ -17,6 +17,7 @@ import {
 export default function Navigation() {
 
   const pathname = usePathname()
+  const router = useRouter()
 
   return (
     <>
@@ -24,10 +25,11 @@ export default function Navigation() {
         <Links>
           <Menu>
             <ul>
-              <Link href="#eventos">
-                <li className={pathname == "/eventos" ? "active" : ""}>
-                  Eventos
-                </li>
+              <Link href="/">
+              <li
+                className={pathname == "/eventos" ? "active" : ""}>
+                Eventos
+              </li>
               </Link>
               <Link href="/podcast">
                 <li className={pathname == "/podcast" ? "active" : ""}>

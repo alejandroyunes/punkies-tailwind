@@ -4,11 +4,12 @@ import { TitleContainer } from "./title.styled"
 interface TitleProps {
   title: string
   message?: string
+  id?: string
 }
 
-const Title = ({ title, message }: TitleProps) => {
+const Title = ({id, title, message }: TitleProps) => {
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <TitleContainer>
         <h3>{title}</h3>
         <h2>{message}</h2>

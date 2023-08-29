@@ -37,7 +37,7 @@ export default function Concerts() {
 
   return (
     <Wrapper>
-      <DesktopWrapper id="eventos">
+      <DesktopWrapper>
         <BodyWrapper>
           <Container>
             <Date>

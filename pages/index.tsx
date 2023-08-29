@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <main>
       <Slider />
-      <Title title={"Eventos"} />
+      <Title title="Eventos" id='eventos'/>
       <Concert />
       <Title title={"Videos"} />
       <Videos items={punkiesVideosProps.items} />
