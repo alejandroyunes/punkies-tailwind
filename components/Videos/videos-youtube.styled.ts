@@ -26,7 +26,7 @@ export const Container = styled.div`
   }
 `;
 
-export const NewsWrapper = styled.div`
+export const VideoCard = styled.div`
   margin: 0 auto;
   max-width: 300px;
   outline: 1px solid ${({ theme }) => theme.textColor};
@@ -42,7 +42,7 @@ export const ImageDiv = styled.div`
   line-height:0;
   &:hover {
     background-color: #fff;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 `;
 
@@ -69,7 +69,7 @@ export const ImageWrapper = styled.div`
    }
   }
 `;
-export const Title = styled.div`
+export const Title = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.md};
   color: ${({ theme }) => theme.textColor};
   font-family: ${({ theme }) => theme.fonts.primary};

@@ -2,13 +2,13 @@ import { useState } from "react"
 import YoutubeIcon from "../../public/svgs/youtube-icon"
 import { Wrapper } from "../Wrapper/wrapper.styled"
 import Image from "next/image"
+import { PunkiesVideosProps } from "../Bandas/Data/videos-youtube/punkies-videos-props"
 
 import {
   Container,
   Description,
-  More,
   Title,
-  NewsWrapper,
+  VideoCard,
   DescriptionWrapper,
   YoutubeIconDiv,
   ImageDiv,
@@ -18,7 +18,6 @@ import {
   VideoYoutube,
   ImageWrapper,
 } from "./videos-youtube.styled";
-import { PunkiesVideosProps } from "../Bandas/Data/videos-youtube/punkies-videos-props";
 
 export default function Videos({ items }: PunkiesVideosProps) {
 
@@ -30,7 +29,7 @@ export default function Videos({ items }: PunkiesVideosProps) {
       <Wrapper>
         <Container>
           {items.map((e, i) => (
-            <NewsWrapper key={i}>
+            <VideoCard key={i}>
               <ImageDiv
                 onClick={() => {
                   setvideo(true);
@@ -55,7 +54,7 @@ export default function Videos({ items }: PunkiesVideosProps) {
                   {e.description}
                 </Description>
               </DescriptionWrapper>
-            </NewsWrapper>
+            </VideoCard>
           ))}
         </Container>
       </Wrapper>

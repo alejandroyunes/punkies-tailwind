@@ -10,7 +10,14 @@ interface ConcertProps {
 
 export const concertsData: ConcertProps = {
   concerts: [
-        {
+    {
+      date: "2023-09-02",
+      fecha: "2 de Sep, 2023",
+      evento: "Lanzamiento Libro PyC",
+      lugar: "Cra 76 # 29-70 Plug sala de ensayo",
+      price: "50k",
+    },
+    {
       date: "2023-08-26",
       fecha: "26 de Agosto, 2023",
       evento: "Festival Artístico y Cultural, RXN",
