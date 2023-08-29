@@ -1,5 +1,5 @@
-import { Wrapper } from "../Wrapper/wrapper.styled";
-import { TitleContainer } from "./title.styled";
+import { Wrapper } from "../Wrapper/wrapper.styled"
+import { TitleContainer } from "./title.styled"
 
 interface TitleProps {
   title: string

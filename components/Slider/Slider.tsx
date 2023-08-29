@@ -1,7 +1,7 @@
-import { SliderContainer, SliderContainerMobile } from "./slider.styled"
-import { SliderMobileProps, SliderProps } from "./sliderData"
-import { Wrapper } from "../Wrapper/wrapper.styled"
-import Carousel from "../Carousel"
+import { SliderContainer, SliderContainerMobile } from './slider.styled'
+import { SliderMobileProps, SliderProps } from './sliderData'
+import { Wrapper } from '../Wrapper/wrapper.styled'
+import Carousel from '../Carousel'
 
 export default function Slider() {
   return (

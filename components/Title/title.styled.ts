@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const TitleContainer = styled.div`
   background: ${({ theme }) => theme.bodyColor};
   max-width: ${({ theme }) => theme.breakpoint.md};
-  margin: 0 auto;
   padding: 28px 0 16px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding: 16px 0 16px;
@@ -17,7 +16,6 @@ export const TitleContainer = styled.div`
   }  
   h2 {
     text-align: center;
-    margin: 0 auto;
     font-size: 1.2rem;
     color: ${({ theme }) => theme.textColor};
     padding-bottom: 24px;
