@@ -4,6 +4,7 @@ export const TitleContainer = styled.div`
   background: ${({ theme }) => theme.bodyColor};
   max-width: ${({ theme }) => theme.breakpoint.md};
   padding: 28px 0 16px;
+  margin: 0 auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding: 16px 0 16px;
   }

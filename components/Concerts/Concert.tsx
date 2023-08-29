@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { Wrapper } from "../Wrapper/wrapper.styled";
-import { concertsData } from "./concerts-data";
+import { useEffect, useState } from "react"
+import { Wrapper } from "../Wrapper/wrapper.styled"
+import { concertsData } from "./concerts-data"
 
 import {
   Container,
@@ -16,16 +16,16 @@ import {
   TitleDateMobile,
   DateMobileWrapper,
   ColumnData,
-} from "./concerts.styled";
+} from "./concerts.styled"
 
 interface ConcertProps {
   concerts: {
-    date: string;
-    evento: string;
-    lugar: string;
-    price: string;
-    fecha: string;
-  }[];
+    date: string
+    evento: string
+    lugar: string
+    price: string
+    fecha: string
+  }[]
 }
 
 export default function Concerts() {
@@ -37,7 +37,7 @@ export default function Concerts() {
 
   return (
     <Wrapper>
-      <DesktopWrapper>
+      <DesktopWrapper id="eventos">
         <BodyWrapper>
           <Container>
             <Date>
@@ -92,7 +92,7 @@ export default function Concerts() {
       </DesktopWrapper>
 
       {concerts?.concerts.map((e, i) => (
-        <MobileWrapper key={i} id="conciertos">
+        <MobileWrapper key={i}>
           <DateMobileWrapper>
             <TitleDateMobile>
               <p>Fecha:</p>

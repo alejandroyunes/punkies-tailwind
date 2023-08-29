@@ -69,6 +69,7 @@ export const ImageWrapper = styled.div`
    }
   }
 `;
+
 export const Title = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.md};
   color: ${({ theme }) => theme.textColor};
@@ -102,6 +103,7 @@ export const More = styled.div`
     font-size: 22px;
   }
 `;
+
 export const VideoOverlay = styled.div<VideoProps>`
   position: fixed;
   top: 0;

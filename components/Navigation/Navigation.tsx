@@ -24,7 +24,7 @@ export default function Navigation() {
         <Links>
           <Menu>
             <ul>
-              <Link href="/eventos">
+              <Link href="#eventos">
                 <li className={pathname == "/eventos" ? "active" : ""}>
                   Eventos
                 </li>

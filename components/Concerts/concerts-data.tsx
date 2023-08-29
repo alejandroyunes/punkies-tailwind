@@ -13,7 +13,7 @@ export const concertsData: ConcertProps = {
     {
       date: "2023-09-02",
       fecha: "2 de Sep, 2023",
-      evento: "Lanzamiento Libro PyC",
+      evento: "Lanzamiento Libro PyC + Piloto Ciego, precio ingluye libro",
       lugar: "Cra 76 # 29-70 Plug sala de ensayo",
       price: "50k",
     },
@@ -42,7 +42,7 @@ export const concertsData: ConcertProps = {
       date: "2023-08-05",
       fecha: "05 de Agosto, 2023",
       evento: "El punk no muere 4",
-      lugar: "Calle 9 # 40-10",
+      lugar: "Calle 9 # 40-10, Bogotá",
       price: "80k",
     },
     {

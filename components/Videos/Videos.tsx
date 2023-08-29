@@ -47,8 +47,9 @@ export default function Videos({ items }: PunkiesVideosProps) {
                     height={200} />
                 </ImageWrapper>
               </ImageDiv>
-              <Title>{e.title}</Title>
-
+              <Title>
+                {e.title}
+              </Title>
               <DescriptionWrapper>
                 <Description>
                   {e.description}
