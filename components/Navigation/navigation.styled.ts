@@ -7,7 +7,7 @@ export const DesktopWrapper = styled.nav`
   width: 100%;
 `;
 
-export const LinksContainer = styled.div`
+export const Links = styled.div`
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -61,43 +61,33 @@ export const Menu = styled.div`
 
 export const ImageMain = styled.div`
   z-index: ${({ theme }) => theme.zIndices.docked};
-  display: flex;
   cursor: pointer;
   img {
     padding: 4px 0 0;
   }
 `;
 
-export const MobileNav = styled.div`
+export const MobileWrapper = styled.div`
   display: none;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: ${({ theme }) => theme.palette.common.black};
-  }
-`;
-
-export const MobileLogo = styled.div`
-  display: none;
-  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
-    display: flex;
-    align-items: center;
-    padding: 5px 0 0 4px;
     -webkit-tap-highlight-color: transparent;
     a {
-    text-decoration: none;
+      text-decoration: none;
     }
   }
 `;
 
 export const ImagePaddingMobile = styled.div`
   padding-left: 24px;
-  height: 60px;
+  height: 52px;
   display: flex;
   align-items: center;
   h1 {
     color: ${({ theme }) => theme.palette.common.white};
-    font-size: 26px;
+    font-size: 24px;
   }
 `;

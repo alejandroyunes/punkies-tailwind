@@ -1,17 +1,24 @@
 import { useState } from "react"
 import Link from "next/link"
 
-import { Menu, Links, HamburgerMenu, ThemeSwitch } from "./index.styled"
+import {
+  Menu,
+  Links,
+  HamburgerMenu,
+  ThemeSwitchWrapper
+} from "./index.styled"
 import { ThemeSwitcher } from "../../ThemeSwitcher"
 
 const Hamburger = () => {
+  
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <HamburgerMenu>
-      <ThemeSwitch>
+      <ThemeSwitchWrapper>
         <ThemeSwitcher />
-      </ThemeSwitch>
+      </ThemeSwitchWrapper>
+
       <Menu onMouseLeave={() => setMenuOpen(false)}>
         <input
           type="checkbox"

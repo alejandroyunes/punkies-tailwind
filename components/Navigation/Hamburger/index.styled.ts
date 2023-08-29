@@ -6,10 +6,10 @@ export const HamburgerMenu = styled.div`
   z-index: ${({ theme }) => theme.zIndices.dropdown};
 `;
 
-export const ThemeSwitch = styled.div`
+export const ThemeSwitchWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 25px 72px 0 0;
+  padding: 16px 72px 0 0;
   -webkit-tap-highlight-color: transparent;
   svg {
     height: 20px;
@@ -20,7 +20,7 @@ export const ThemeSwitch = styled.div`
 
 export const Menu = styled.div`
   position: absolute;
-  top: 23px;
+  top: 16px;
   right: 0px;
   z-index: ${({ theme }) => theme.zIndices.dropdown};
   -webkit-user-select: none;

@@ -10,19 +10,18 @@ import {
   DesktopWrapper,
   Menu,
   ImageMain,
-  LinksContainer,
-  MobileNav,
-  MobileLogo,
+  Links,
+  MobileWrapper,
 } from "./navigation.styled"
 
-export default function Navigation () {
-  
+export default function Navigation() {
+
   const pathname = usePathname()
 
   return (
     <>
       <DesktopWrapper>
-        <LinksContainer>
+        <Links>
           <Menu>
             <ul>
               <Link href="/eventos">
@@ -83,19 +82,17 @@ export default function Navigation () {
               <ThemeSwitcher />
             </ul>
           </Menu>
-        </LinksContainer>
+        </Links>
       </DesktopWrapper>
 
-      <MobileNav>
-        <MobileLogo>
-          <Link href="/">
-            <ImagePaddingMobile>
-              <h1>Punkies & Cerebro</h1>
-            </ImagePaddingMobile>
-          </Link>
-        </MobileLogo>
+      <MobileWrapper>
+        <Link href="/">
+          <ImagePaddingMobile>
+            <h1>Punkies & Cerebro</h1>
+          </ImagePaddingMobile>
+        </Link>
         <Hamburger />
-      </MobileNav>
+      </MobileWrapper>
     </>
   )
 }

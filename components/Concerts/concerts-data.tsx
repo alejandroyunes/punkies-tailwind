@@ -13,14 +13,14 @@ export const concertsData: ConcertProps = {
         {
       date: "2023-08-26",
       fecha: "26 de Agosto, 2023",
-      evento: "Festival Artiscio y Cultural, RXN",
+      evento: "Festival Artístico y Cultural, RXN",
       lugar: "Calle 71 # 39-2 parque Gaitan",
       price: "Libre",
     },
     {
       date: "2023-08-18",
       fecha: "18 de Agosto, 2023",
-      evento: "Festival Artiscio y Cultural, LDS",
+      evento: "Festival Artístico y Cultural, LDS",
       lugar: "Cra. 42A # 85-159",
       price: "Libre",
     },
