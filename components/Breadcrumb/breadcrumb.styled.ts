@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const FullWrapper = styled.div`
   background-color: ${({ theme }) => theme.bodyColor};
-
   #gp-discography {
     scroll-margin: 2000px;
     scroll-behavior: smooth;
@@ -39,14 +38,14 @@ export const GoBackWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-  margin-top: 10px;
+  margin-top: 16px;
   z-index: ${({ theme }) => theme.zIndices.docked};
   scroll-behavior: smooth;
   h1 {
-    padding: 1px 48px 0 0;
+    padding: 16px 48px 0 0;
     font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.palette.common.white};
-    font-size: ${({ theme }) => theme.fontSizes["3xl"]};
+    color: ${({ theme }) => theme.palette.common.black};
+    font-size: ${({ theme }) => theme.fontSizes.title};
     text-align: left;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {

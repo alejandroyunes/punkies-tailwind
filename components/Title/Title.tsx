@@ -11,8 +11,8 @@ const Title = ({id, title, message }: TitleProps) => {
   return (
     <Wrapper id={id}>
       <TitleContainer>
-        <h3>{title}</h3>
-        <h2>{message}</h2>
+        <h2>{title}</h2>
+        {/* <h3>{message}</h3> */}
       </TitleContainer>
     </Wrapper>
 

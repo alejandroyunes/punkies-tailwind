@@ -22,17 +22,17 @@ export const RedLineDesktop = styled.div`
 export const TitleTextDesktop = styled.div`
   display: flex;
   width: ${({ theme }) => theme.breakpoint.md};
-  margin: -57px auto 0;
+  margin: -48px auto 0;
   z-index: ${({ theme }) => theme.zIndices.docked};
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
   }
 `;
 export const Title = styled.h1`
-  font-size: ${({ theme }) => theme.fontSizes.titleMobile};
+  font-size: 20px;
   flex-basis: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 16px;
   font-family: ${({ theme }) => theme.fonts.primary};
   color: ${({ theme }) => theme.palette.common.white};
   padding: 0 48px;
