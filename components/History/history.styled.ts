@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
-export const HistoryContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
-    height: auto;
-  }
-`;
 export const RedLineDesktop = styled.div`
-  outline: 1px solid white;
-  background-color: ${({ theme }) => theme.palette.primary.main};
+  outline: 1px solid ${({ theme }) => theme.palette.primary.main};
+  width: 100%;
+  background-color: ${({ theme }) => theme.palette.common.black};
   height: 48px;
   opacity: 0.3;
   z-index: ${({ theme }) => theme.zIndices.base};
@@ -20,9 +14,10 @@ export const RedLineDesktop = styled.div`
 export const TitleTextDesktop = styled.div`
   display: flex;
   height: 48px;
-  width: ${({ theme }) => theme.breakpoint.md};
+  width: 100%;
   margin: -48px auto 0;
   z-index: ${({ theme }) => theme.zIndices.docked};
+  background-color: ${({ theme }) => theme.palette.common.black};
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
   }
@@ -88,7 +83,7 @@ export const BandDescription = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.lg};
   font-weight: 300;
   font-family: ${({ theme }) => theme.fonts.secondary};
-  color: ${({ theme }) => theme.palette.common.white};
+  color: ${({ theme }) => theme.textColor};
   text-align: left;
   padding: 0 48px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {

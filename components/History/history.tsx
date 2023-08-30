@@ -1,4 +1,4 @@
-import { FC, useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb"
 import Image from "next/image"
 import {
@@ -32,7 +32,7 @@ interface BandasProps {
   }[]
 }
 
-const History: FC = () => {
+export default function History() {
   const [bandas, setBandas] = useState<BandasProps>()
 
   const banda = useMemo(() => {
@@ -83,5 +83,3 @@ const History: FC = () => {
     </Wrapper>
   )
 }
-
-export default History

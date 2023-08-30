@@ -73,4 +73,10 @@ export const GoBack = styled.div`
   &:hover {
     text-decoration: underline;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    margin: 22px 0 0 8px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    margin: 19px 0 0 8px;
+  }
 `;
