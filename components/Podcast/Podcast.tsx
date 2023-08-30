@@ -1,22 +1,20 @@
 import Image from "next/image"
 import podcastImage from '../../public/podcasts/truenopodcast.webp'
 
-
 import {
-  FullWrapper,
-  Wrapper,
+  PodcastContainer,
   WrapperChild,
   ButtonWrapper,
 } from "./podcast.styled";
 
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Button from "../Button/Button";
+import { Wrapper } from "../Wrapper/wrapper.styled";
 
 const Podcast = () => {
 
   return (
-    <>
-      <FullWrapper>
+      <Wrapper>
         <Breadcrumb
           breadcrumId="pyc-discography"
           title="Podcasts"
@@ -25,7 +23,7 @@ const Podcast = () => {
           goBack={true}
           backMessage={"volver"}
         />
-        <Wrapper>
+        <PodcastContainer>
           <WrapperChild>
             <Image src={podcastImage} alt="" width={328} height={328} />
           </WrapperChild>
@@ -59,9 +57,8 @@ const Podcast = () => {
               </div>
             </ButtonWrapper>
           </WrapperChild>
-        </Wrapper>
-      </FullWrapper>
-    </>
+        </PodcastContainer>
+      </Wrapper>
   );
 };
 

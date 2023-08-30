@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-export const FullWrapper = styled.div`
-  background-color: ${({ theme }) => theme.bodyColor};
-  width: 100%;
-`;
-export const Wrapper = styled.section`
+
+export const PodcastContainer = styled.section`
   max-width: ${({ theme }) => theme.breakpoint.md};
   margin: 24px auto 16px;
   display: grid;

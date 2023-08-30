@@ -3,7 +3,6 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb"
 import Image from "next/image"
 import {
   Title,
-  BodyWrapper,
   TitleTextDesktop,
   RedLineDesktop,
   ImageDiscoWrapper,
@@ -18,6 +17,7 @@ import {
 
 import { briefBandHistoryProps } from "../Bandas/Data/brief-band-history-props"
 import Button from "../Button/Button"
+import { Wrapper } from "../Wrapper/wrapper.styled"
 
 interface BandasProps {
   bands: {
@@ -40,8 +40,7 @@ const History: FC = () => {
   }, [])
 
   return (
-    <>
-      <BodyWrapper>
+    <Wrapper>
         <RedLineDesktop />
         <TitleTextDesktop>
           <Title>GP</Title>
@@ -66,7 +65,7 @@ const History: FC = () => {
                   src={e.image}
                   alt={e.alt}
                   width={390}
-                  height={220} />
+                  height={210} />
               </ImageWrapper>
               <BandDescriptionWrapper>
                 <BandDescription>{e.description}</BandDescription>
@@ -81,8 +80,7 @@ const History: FC = () => {
             </ImageDiv>
           ))}
         </ImageDiscoWrapper>
-      </BodyWrapper>
-    </>
+    </Wrapper>
   )
 }
 

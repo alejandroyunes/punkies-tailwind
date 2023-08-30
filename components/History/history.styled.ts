@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-export const BodyWrapper = styled.div`
-  background-color: ${({ theme }) => theme.bodyColor};
+export const HistoryContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     height: auto;
   }
@@ -21,6 +19,7 @@ export const RedLineDesktop = styled.div`
 `;
 export const TitleTextDesktop = styled.div`
   display: flex;
+  height: 48px;
   width: ${({ theme }) => theme.breakpoint.md};
   margin: -48px auto 0;
   z-index: ${({ theme }) => theme.zIndices.docked};
