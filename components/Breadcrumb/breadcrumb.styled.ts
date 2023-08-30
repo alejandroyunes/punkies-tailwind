@@ -25,6 +25,7 @@ export const TitleWrapper = styled.div`
   z-index: ${({ theme }) => theme.zIndices.docked};
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
+  height: 60px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding: 0 24px 0;
     width: 100%;
@@ -38,14 +39,14 @@ export const GoBackWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-  margin-top: 16px;
+  margin-top: 0px;
   z-index: ${({ theme }) => theme.zIndices.docked};
   scroll-behavior: smooth;
   h1 {
-    padding: 16px 48px 0 0;
+    padding: 24px 48px 0 0;
     font-family: ${({ theme }) => theme.fonts.primary};
-    color: ${({ theme }) => theme.palette.common.black};
-    font-size: ${({ theme }) => theme.fontSizes.title};
+    color: ${({ theme }) => theme.palette.common.white};
+    font-size: 20px;
     text-align: left;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
