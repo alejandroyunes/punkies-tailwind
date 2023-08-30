@@ -51,7 +51,7 @@ export const Title = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     h1 {
-      padding: 8px 0 0 0;
+      padding: 22px 0 0 0;
       font-size: ${({ theme }) => theme.fontSizes.xl};
     }
   }
@@ -67,7 +67,7 @@ export const ArrowContent = styled.div`
 
 export const GoBack = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.xl};
-  margin: 19px 0 0 8px;
+  margin: 21px 0 0 8px;
   font-family: ${({ theme }) => theme.fonts.secondary};
   color: ${({ theme }) => theme.palette.common.white};
   &:hover {
