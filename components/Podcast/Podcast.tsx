@@ -10,7 +10,7 @@ import {
 } from "./podcast.styled";
 
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-import SimpleButton from "../Button/SimpleButton/SimpleButton";
+import Button from "../Button/Button";
 
 const Podcast = () => {
 
@@ -40,17 +40,18 @@ const Podcast = () => {
                 </p>
               </div>
               <div>
-                <SimpleButton
+                <Button
                   buttonText="Escuchar en Apple Podcasts"
+                  externalLink={true}
                   link={
                     "https://podcasts.apple.com/bo/podcast/el-trueno-de-queronea/id1562723117"
                   }
                 />
               </div>
               <div>
-                {" "}
-                <SimpleButton
+                <Button
                   buttonText="Escuchar en Spotify"
+                  externalLink={true}
                   link={
                     "https://anchor.fm/jaime-lpez/episodes/Retos-de-ingenieria-I-Entrada-61-e1kgjra"
                   }

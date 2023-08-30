@@ -1,41 +1,19 @@
-import { FC } from 'react'
-
-import { Wrapper } from './button.styled'
 import Link from 'next/link'
+import { ButtonContainer } from './button.styled'
 
 interface ButtonProps {
-  buttonText?: string
-  link?: string
-  externalLink?: boolean
-  download?: boolean
-  pdf?: string
-  width?: string
-  onClick?: any
+  buttonText: string
+  link: string
+  externalLink: boolean
 }
 
-const Button: FC<ButtonProps> = ({
-  buttonText,
-  link,
-  externalLink,
-  download,
-  pdf,
-  width
-}) => {
+export default function DownloadButton({ buttonText, link, externalLink }: ButtonProps) {
+
   return (
-    <Wrapper width={width}>
-      {download ? (
-        <Link href={`${link}`} target={'_blank'}>
-          <span>{buttonText}</span>
-        </Link>
-      ) : (
-        <div className='btn btn-three'>
-          <Link href={`${link}`} target={externalLink ? '_blank' : ''}>
-            <span>{buttonText}</span>
-          </Link>
-        </div>
-      )}
-    </Wrapper>
+    <ButtonContainer>
+      <Link href={`${link}`} target={externalLink ? '_blank' : ''}>
+        <span>{buttonText}</span>
+      </Link>
+    </ButtonContainer>
   )
 }
-
-export default Button

@@ -1,7 +1,6 @@
 import { FC, useMemo, useState } from "react"
 
 import Breadcrumb from "../Breadcrumb/Breadcrumb"
-import Button from "../Button/Button"
 import Image from "next/image"
 
 import {
@@ -24,6 +23,7 @@ import { librosDatos } from "./libros.datos";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Wrapper } from "../Wrapper/wrapper.styled";
+import DownloadButton from "../Button/Button";
 
 const Libros: FC = () => {
   const [libros, setLibros] = useState<LibrosProps>();
@@ -53,7 +53,7 @@ const Libros: FC = () => {
                 height={280} />
             </ItemImg>
             <ItemDescription>
-              <Button buttonText="Descargar" download={true} pdf={`${e.pdf}`} />
+              <DownloadButton buttonText="Descargar" link={`${e.pdf}`} externalLink={false} />
             </ItemDescription>
             <ItemDescription>
               <h3>
@@ -74,7 +74,7 @@ const Libros: FC = () => {
                 </h3>
               </ItemDescription>
               <ItemDescription>
-                <Button buttonText="Descargar" download={true} pdf={e.pdf} />
+                <DownloadButton buttonText="Descargar" link={e.pdf} externalLink={false} />
               </ItemDescription>
               <ItemImg>
                 <Image

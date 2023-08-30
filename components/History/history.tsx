@@ -1,7 +1,6 @@
-import { FC, useMemo, useState } from "react";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-import Button from "../../components/Button/Button";
-import Image from "next/image";
+import { FC, useMemo, useState } from "react"
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb"
+import Image from "next/image"
 import {
   Title,
   BodyWrapper,
@@ -15,29 +14,30 @@ import {
   BandDescriptionWrapper,
   BreadcrumbWrapper,
   ImageWrapper,
-} from "./history.styled";
+} from "./history.styled"
 
-import { briefBandHistoryProps } from "../Bandas/Data/brief-band-history-props";
+import { briefBandHistoryProps } from "../Bandas/Data/brief-band-history-props"
+import Button from "../Button/Button"
 
 interface BandasProps {
   bands: {
-    image: string;
-    alt: string;
-    description: string;
-    url: string;
-    link: string;
-    band: string;
-    topPadding: boolean;
-    goBack: boolean;
-  }[];
+    image: string
+    alt: string
+    description: string
+    url: string
+    link: string
+    band: string
+    topPadding: boolean
+    goBack: boolean
+  }[]
 }
 
 const History: FC = () => {
-  const [bandas, setBandas] = useState<BandasProps>();
+  const [bandas, setBandas] = useState<BandasProps>()
 
   const banda = useMemo(() => {
-    return setBandas(briefBandHistoryProps);
-  }, []);
+    return setBandas(briefBandHistoryProps)
+  }, [])
 
   return (
     <>
@@ -52,7 +52,6 @@ const History: FC = () => {
         <ImageDiscoWrapper>
           {bandas?.bands.map((e, i) => (
             <ImageDiv key={i}>
-              {/* BREADCRUM FOR MOBILE */}
               <BreadcrumbWrapper>
                 <Breadcrumb
                   title={e.band}
@@ -73,10 +72,10 @@ const History: FC = () => {
                 <BandDescription>{e.description}</BandDescription>
                 <BandReadMoreButton>
                   <Button
-                  buttonText={"leer más"}
-                  link={e.link}
-                  externalLink={false}
-                />
+                    buttonText="leer más"
+                    link={e.link}
+                    externalLink={false}
+                  />
                 </BandReadMoreButton>
               </BandDescriptionWrapper>
             </ImageDiv>
@@ -84,7 +83,7 @@ const History: FC = () => {
         </ImageDiscoWrapper>
       </BodyWrapper>
     </>
-  );
-};
+  )
+}
 
-export default History;
+export default History
