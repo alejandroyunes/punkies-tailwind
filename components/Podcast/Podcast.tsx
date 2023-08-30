@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Image from "next/image"
 import podcastImage from '../../public/podcasts/truenopodcast.webp'
 
@@ -11,8 +10,9 @@ import {
 } from "./podcast.styled";
 
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-import Button from "../../components/Button/Button";
-const Podcast: FC = () => {
+import SimpleButton from "../Button/SimpleButton/SimpleButton";
+
+const Podcast = () => {
 
   return (
     <>
@@ -40,9 +40,8 @@ const Podcast: FC = () => {
                 </p>
               </div>
               <div>
-                <Button
+                <SimpleButton
                   buttonText="Escuchar en Apple Podcasts"
-                  externalLink={true}
                   link={
                     "https://podcasts.apple.com/bo/podcast/el-trueno-de-queronea/id1562723117"
                   }
@@ -50,9 +49,8 @@ const Podcast: FC = () => {
               </div>
               <div>
                 {" "}
-                <Button
+                <SimpleButton
                   buttonText="Escuchar en Spotify"
-                  externalLink={true}
                   link={
                     "https://anchor.fm/jaime-lpez/episodes/Retos-de-ingenieria-I-Entrada-61-e1kgjra"
                   }

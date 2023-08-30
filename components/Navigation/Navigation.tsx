@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Hamburger from "./Hamburger/Hamburger"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 import Logo from '../../public/logos/punkies-logo.png'
 import Image from 'next/image'
 import { ThemeSwitcher } from "../ThemeSwitcher"
@@ -15,9 +15,7 @@ import {
 } from "./navigation.styled"
 
 export default function Navigation() {
-
   const pathname = usePathname()
-  const router = useRouter()
 
   return (
     <>

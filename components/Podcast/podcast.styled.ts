@@ -13,11 +13,6 @@ export const Wrapper = styled.section`
     padding: 0 40px;
     grid-template-columns: repeat(1, 1fr);
   }
-
-  h1 {
-    color: white;
-    font-size: 36px;
-  }
 `;
 
 export const WrapperChild = styled.div`
@@ -40,7 +35,7 @@ export const ButtonWrapper = styled.div`
   grid-template-columns: 1fr;
   justify-items: center;
   font-family: ${({ theme }) => theme.fonts.primary};
-  color: ${({ theme }) => theme.palette.common.white};
+  color: ${({ theme }) => theme.textColor};
   font-size: ${({ theme }) => theme.fontSizes.lg};
   h1 {
     font-size: ${({ theme }) => theme.fontSizes["5xl"]};
@@ -49,6 +44,7 @@ export const ButtonWrapper = styled.div`
     padding-top: 4px;
     font-family: ${({ theme }) => theme.fonts.secondary};
     font-size: ${({ theme }) => theme.fontSizes.md};
+    font-family: ${({ theme }) => theme.fonts.primary};
   }
   p {
     padding: 24px 24px 24px 0;

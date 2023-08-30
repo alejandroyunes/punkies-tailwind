@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import { Wrapper } from './button.styled'
 import Link from 'next/link'
+
 interface ButtonProps {
   buttonText?: string
   link?: string
@@ -23,9 +24,9 @@ const Button: FC<ButtonProps> = ({
   return (
     <Wrapper width={width}>
       {download ? (
-        <a href={pdf} target={'_blank'}>
+        <Link href={`${link}`} target={'_blank'}>
           <span>{buttonText}</span>
-        </a>
+        </Link>
       ) : (
         <div className='btn btn-three'>
           <Link href={`${link}`} target={externalLink ? '_blank' : ''}>
