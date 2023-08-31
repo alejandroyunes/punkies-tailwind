@@ -14,8 +14,9 @@ import {
   ItemImg,
   ItemDescription,
   ItemWrap,
-  ItemWrapMobile,
+  ItemCardMobile,
   WhatApp,
+  ItemWrapMobile
 } from "./tienda.styled";
 import { mockData_tiendaProps } from "./tienda-full";
 import { Carousel } from "react-responsive-carousel";
@@ -87,13 +88,13 @@ const Tienda: FC = () => {
           <Carousel>
             {articles &&
               articles.map((e, i) => (
-                <ItemCard key={i}>
+                <ItemCardMobile key={i}>
                   <ItemImg>
                     <Image
                       src={e.image}
                       alt=""
-                      width={300}
-                      height={340} />
+                      width={180}
+                      height={280} />
                   </ItemImg>
                   <ItemDescription>
                     {e.size && (
@@ -112,10 +113,10 @@ const Tienda: FC = () => {
                       <span>{e.description}</span>
                     </h3>
                   </ItemDescription>
-                </ItemCard>
+                </ItemCardMobile>
               ))}
           </Carousel>
-        </ItemWrapMobile>
+        </ItemWrapMobile> 
       </BodyWrapper>
       <WhatApp>
         <Link

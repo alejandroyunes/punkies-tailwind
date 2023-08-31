@@ -18,7 +18,7 @@ export const ButtonsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 8px;
@@ -50,12 +50,16 @@ export const ItemWrap = styled.section`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   padding: 16px 0 24px;
+  max-width: ${({ theme }) => theme.breakpoint.md};
+  margin: 0 auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     grid-template-columns: repeat(3, 1fr);
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     display: none;
-    background: red;
   }
 `;
 
@@ -64,13 +68,22 @@ export const ItemCard = styled.div`
   flex-direction: column;
   position: relative;
   align-items: center;
+  max-width: 100%;
+
   img {
     height: 332px;
     width: auto;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     img {
-      height: 360px;
+      height: 200px;
+      width: auto;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    img {
+      border: 4px solid green;
+      height: 200px;
       width: auto;
     }
   }
@@ -79,17 +92,25 @@ export const ItemCard = styled.div`
 export const ItemImg = styled.div`
   padding: 0 16px;
   cursor: pointer;
-
 `;
 
 export const ItemWrapMobile = styled.div`
   display: none;
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
-    display: flex;
-    height: 480px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 24px 24px 0;
+  display: block;
+    
+  }
+`;
+
+export const ItemCardMobile = styled.div`
+  display: none;
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    display: block;
+    padding-top: 24px;
+    height: 440px;
+    img {
+      max-width: 280px;
+    }
   }
 `;
 
