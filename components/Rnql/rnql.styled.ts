@@ -28,6 +28,14 @@ export const WrapperChild = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     padding-top: 24px;
   }
+  img {
+    width: 400px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
+    img {
+      width: 240px
+    }
+  }
   svg {
     position: absolute;
     width: 100px;

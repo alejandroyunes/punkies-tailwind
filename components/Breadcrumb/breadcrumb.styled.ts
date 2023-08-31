@@ -67,7 +67,7 @@ export const ArrowContent = styled.div`
 
 export const GoBack = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.xl};
-  margin: 21px 0 0 8px;
+  margin: 22px 0 0 8px;
   font-family: ${({ theme }) => theme.fonts.secondary};
   color: ${({ theme }) => theme.palette.common.white};
   &:hover {

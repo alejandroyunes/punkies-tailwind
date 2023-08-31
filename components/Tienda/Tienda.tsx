@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import WhatAppIcon from "../../public/svgs/whatapp"
@@ -22,7 +22,6 @@ import { Carousel } from "react-responsive-carousel";
 
 const Tienda: FC = () => {
   const [categoryState, setCategoryState] = useState(0);
-
   const category = mockData_tiendaProps.tienda;
 
   const unique = category.filter(
@@ -30,7 +29,6 @@ const Tienda: FC = () => {
   );
   const articles = category.filter((e) => e.categoryNum === categoryState);
 
-  
   return (
     <>
       <BodyWrapper>
@@ -59,10 +57,10 @@ const Tienda: FC = () => {
             <ItemCard key={i}>
               <ItemImg>
                 <Image
-                 src={e.image} 
-                 alt=""
-                 width={200}
-                 height={240} />
+                  src={e.image}
+                  alt=""
+                  width={300}
+                  height={240} />
               </ItemImg>
               <ItemDescription>
                 {e.size && (
@@ -91,7 +89,11 @@ const Tienda: FC = () => {
               articles.map((e, i) => (
                 <ItemCard key={i}>
                   <ItemImg>
-                    <img src={e.image} alt="" />
+                    <Image
+                      src={e.image}
+                      alt=""
+                      width={300}
+                      height={340} />
                   </ItemImg>
                   <ItemDescription>
                     {e.size && (
@@ -112,7 +114,7 @@ const Tienda: FC = () => {
                   </ItemDescription>
                 </ItemCard>
               ))}
-          </Carousel> 
+          </Carousel>
         </ItemWrapMobile>
       </BodyWrapper>
       <WhatApp>

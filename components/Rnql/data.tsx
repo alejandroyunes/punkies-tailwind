@@ -20,7 +20,7 @@ export const RnqlData: RnqlProps = {
   media: [
     {
       image: {
-        url: "/rnql-sortilegio.webp",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1693447737/rqnl/sortilegio_umy7ju.webp",
       },
       id: 0,
       title: "Sorgilegio",
@@ -30,7 +30,7 @@ export const RnqlData: RnqlProps = {
     },
     {
       image: {
-        url: "/nada-vale.webp",
+        url: "https://res.cloudinary.com/dswubnbqj/image/upload/v1693447745/rqnl/nada-vale-lagrimas_ka43lc.webp",
       },
       id: 1,
       title: "Nada Vale Lagrimas",

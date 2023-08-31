@@ -21,19 +21,19 @@ const Rnql: FC = () => {
         <Wrapper>
         <WrapperChild>
               <Link target="_blank" href="https://www.youtube.com/watch?v=gZeciffSmxs">
-                <img src="/sopa.webp" alt="nuevo tema de rqnl - punkies y cerebro" />
+                <img src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693447737/rqnl/sopa_u4eg5x.webp" alt="nuevo tema de rqnl - punkies y cerebro" />
                 <YoutubeRed />
               </Link>
           </WrapperChild>
           <WrapperChild>
               <Link target="_blank" href="https://www.youtube.com/watch?v=S5LYn_ebdxs">
-                <img src="/sortilegio.webp" alt="" />
+                <img src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693447737/rqnl/sortilegio_umy7ju.webp" alt="" />
                 <YoutubeRed />
               </Link>
           </WrapperChild>
           <WrapperChild>
             <Link href="https://www.youtube.com/watch?v=nYcgdKdE7fw" target="_blank">
-                <img src="/nada-vale-lagrimas.webp" alt="" />
+                <img src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693447745/rqnl/nada-vale-lagrimas_ka43lc.webp" alt="" />
                 <YoutubeRed />
             </Link>
           </WrapperChild>

@@ -101,11 +101,18 @@ export const Image = styled.section`
     width: 100%;
     height: 320px;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding: 0 8px 8px;
+    img {
+      width: 100%;
+      height: 280px;
+    }
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.xs}) {
     padding: 0 8px 8px;
     img {
       width: 100%;
-      height: 240px;
+      height: 200px;
     }
   }
 `;

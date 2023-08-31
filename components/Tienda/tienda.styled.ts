@@ -49,9 +49,7 @@ export const ItemWrap = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  margin: 24px auto 0;
-  padding: 0 24px;
-  max-width: ${({ theme }) => theme.breakpoint.md};
+  padding: 16px 0 24px;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -61,28 +59,40 @@ export const ItemWrap = styled.section`
   }
 `;
 
-export const ItemWrapMobile = styled.div`
-  display: none;
-  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
-    display: flex;
-    height: 480px;
-    padding: 24px 24px 0;
-  }
-`;
-
 export const ItemCard = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
+  img {
+    height: 332px;
+    width: auto;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+    img {
+      height: 360px;
+      width: auto;
+    }
+  }
 `;
 
 export const ItemImg = styled.div`
   padding: 0 16px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
+
 `;
+
+export const ItemWrapMobile = styled.div`
+  display: none;
+  @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+  }
+`;
+
 
 export const ItemDescription = styled.div`
   margin-top: 2.5px;
