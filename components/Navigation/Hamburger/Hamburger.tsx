@@ -35,7 +35,7 @@ const Hamburger = () => {
               Inicio
             </li>
           </Link>
-          <Link href="/eventos">
+          <Link href="/">
             <li onClick={() => setMenuOpen(false)}>
               Eventos
             </li>
