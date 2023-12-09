@@ -117,20 +117,7 @@ const Contact: FC = () => {
               <h2>Jimmy Jazz</h2>
             </Image>
 
-            <Image>
-              <img
-                src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693007196/contacto/tctqsolyn2yvnwoyegfd.webp"
-                alt="Guitarra lider de Punkies Y Cerebro"
-              />
-              <h2>Erich Hernandez</h2>
-            </Image>
-            <Image>
-              <img
-                src="https://res.cloudinary.com/dswubnbqj/image/upload/v1693007195/contacto/klb35p0kxd8bhuiut1rl.webp"
-                alt="Guitarra Rítmica de Punkies Y Cerebro"
-              />
-              <h2>Alejandro Yunes</h2>
-            </Image>
+
           </ContactImages>
         </ContactWrapper>
       </FullWrapper>
